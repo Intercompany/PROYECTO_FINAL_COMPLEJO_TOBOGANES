@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA4DED1E-18F9-4F95-961A-1DE8CF7FACF3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WindowsFormsApplication1.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KIOSKOBEBIDAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KIOSKOBEBIDAS.Designer.cs">
+      <DependentUpon>KIOSKOBEBIDAS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NUEVO_CLIENTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NUEVO_CLIENTE.Designer.cs">
+      <DependentUpon>NUEVO_CLIENTE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POPUPCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPUPCliente.Designer.cs">
+      <DependentUpon>POPUPCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="REIMPRESIONES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REIMPRESIONES.Designer.cs">
+      <DependentUpon>REIMPRESIONES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CAJA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CAJA.Designer.cs">
+      <DependentUpon>CAJA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InterfazVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfazVenta.Designer.cs">
+      <DependentUpon>InterfazVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MOVIMIENTOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MOVIMIENTOS.Designer.cs">
+      <DependentUpon>MOVIMIENTOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KIOSKOBEBIDAS.resx">
+      <DependentUpon>KIOSKOBEBIDAS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NUEVO_CLIENTE.resx">
+      <DependentUpon>NUEVO_CLIENTE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POPUPCliente.resx">
+      <DependentUpon>POPUPCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REIMPRESIONES.resx">
+      <DependentUpon>REIMPRESIONES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CAJA.resx">
+      <DependentUpon>CAJA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InterfazVenta.resx">
+      <DependentUpon>InterfazVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MOVIMIENTOS.resx">
+      <DependentUpon>MOVIMIENTOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CAPA_ENTIDAD\CAPA_ENTIDAD.csproj">
+      <Project>{b2479828-295f-47c2-8b8a-a6fa65c29a16}</Project>
+      <Name>CAPA_ENTIDAD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CAPA_NEGOCIO\CAPA_NEGOCIO.csproj">
+      <Project>{07766ffd-d6e2-4dd3-b017-32f04f52d248}</Project>
+      <Name>CAPA_NEGOCIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54F.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-formulario-seo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_c_ER-380.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img-begin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-formulario-seo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img-begin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p_c_ER-3801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54F1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_GRUPO_DIONYS %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lupa_png__noes_hecha_por_mi_by_byycaami-d513euc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2545.jpg" />
+    <Content Include="Resources\43822hd.jpg" />
+    <None Include="Resources\43822hd1.jpg" />
+    <None Include="Resources\74370-OEB5DU-339.jpg" />
+    <Content Include="Resources\abstract_background_red-1024x768.jpg" />
+    <None Include="Resources\abstract_background_red-1024x7681.jpg" />
+    <Content Include="Resources\fondo-tricolor-con-degradado_1095-64.jpg" />
+    <None Include="Resources\fondo-tricolor-con-degradado_1095-641.jpg" />
+    <Content Include="Resources\large-background-1024x724.jpg" />
+    <None Include="Resources\large-background-1024x7241.jpg" />
+    <Content Include="Resources\nuevo-usuario.png" />
+    <None Include="Resources\nuevo-usuario1.png" />
+    <Content Include="Resources\textura-de-gradiente-de-acuarela-en-tonos-azules_23-2147508391.jpg" />
+    <None Include="Resources\textura-de-gradiente-de-acuarela-en-tonos-azules_23-21475083911.jpg" />
+    <None Include="Resources\flecha-ampliar.png" />
+    <None Include="Resources\expandir-boton.png" />
+    <None Include="Resources\menu-en-boton-de-expansion1.png" />
+    <None Include="Resources\menu-en-boton-de-expansion.png" />
+    <None Include="Resources\menu-en-boton-de-expansion %281%29.png" />
+    <None Include="Resources\flecha-de-expandir1.png" />
+    <None Include="Resources\flecha-de-expandir.png" />
+    <None Include="Resources\agrandar.png" />
+    <None Include="Resources\agregar-usuario.png" />
+    <None Include="Resources\b_1309256029901.jpg" />
+    <None Include="Resources\1680_1050_20091231121824407020.jpg" />
+    <Content Include="Resources\background-1297920_1280.png" />
+    <Content Include="Resources\blue-1142745_640.jpg" />
+    <None Include="Resources\blue-1142745_6401.jpg" />
+    <Content Include="Resources\caja-registradora.png" />
+    <Content Include="Resources\clasificacion.png" />
+    <None Include="Resources\conseguir-dinero.png" />
+    <None Include="Resources\conseguir-dinero1.png" />
+    <None Include="Resources\conseguir-dinero %281%29.png" />
+    <None Include="Resources\degradados_azules_1920x1200_127-1024x640 %281%29.jpeg" />
+    <None Include="Resources\degradados_azules_1920x1200_127-1024x640 %281%291.jpeg" />
+    <Content Include="Resources\degradados_azules_1920x1200_127-1024x640.jpeg" />
+    <Content Include="Resources\impresora.png" />
+    <Content Include="Resources\movimiento-de-la-mano.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

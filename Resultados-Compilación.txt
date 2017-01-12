@@ -1,0 +1,15 @@
+﻿1>------ Operación Recompilar todo iniciada: proyecto: CAPA_ENTIDAD, configuración: Debug Any CPU ------
+1>  CAPA_ENTIDAD -> C:\Users\Xerorules\Desktop\DionysMaster-Estable\CAPA_ENTIDAD\bin\Debug\CAPA_ENTIDAD.dll
+2>------ Operación Recompilar todo iniciada: proyecto: CAPA_DATOS, configuración: Debug Any CPU ------
+2>  CAPA_DATOS -> C:\Users\Xerorules\Desktop\DionysMaster-Estable\CAPA_DATOS\bin\Debug\CAPA_DATOS.dll
+3>------ Operación Recompilar todo iniciada: proyecto: CAPA_NEGOCIO, configuración: Debug Any CPU ------
+3>  CAPA_NEGOCIO -> C:\Users\Xerorules\Desktop\DionysMaster-Estable\CAPA_NEGOCIO\bin\Debug\CAPA_NEGOCIO.dll
+4>------ Operación Recompilar todo iniciada: proyecto: VISTA, configuración: Debug Any CPU ------
+4>C:\Users\Xerorules\Desktop\DionysMaster-Estable\WindowsFormsApplication1\REIMPRESIONES.cs(861,24,861,30): warning CS0219: La variable 'cajon1' está asignada pero su valor nunca se usa
+4>C:\Users\Xerorules\Desktop\DionysMaster-Estable\WindowsFormsApplication1\MOVIMIENTOS.cs(1194,20,1194,28): warning CS0219: La variable 'TOTALMOV' está asignada pero su valor nunca se usa
+4>C:\Users\Xerorules\Desktop\DionysMaster-Estable\WindowsFormsApplication1\InterfazVenta.cs(1357,24,1357,30): warning CS0219: La variable 'cajon1' está asignada pero su valor nunca se usa
+4>C:\Users\Xerorules\Desktop\DionysMaster-Estable\WindowsFormsApplication1\MOVIMIENTOS.cs(1673,24,1673,30): warning CS0219: La variable 'cajon1' está asignada pero su valor nunca se usa
+4>  VISTA -> C:\Users\Xerorules\Desktop\DionysMaster-Estable\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+5>------ Operación Recompilar todo omitida: proyecto: INSTALADOR_VF, configuración: Debug ------
+5>Proyecto no seleccionado para compilarse para esta configuración de solución 
+========== Recompilar todo: 4 correctos, 0 incorrectos, 1 omitidos ==========
