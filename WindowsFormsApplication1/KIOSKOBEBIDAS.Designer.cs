@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label12 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -92,9 +92,29 @@
             this.btnBIEN19 = new System.Windows.Forms.Button();
             this.btnBIEN18 = new System.Windows.Forms.Button();
             this.btnBIEN17 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBIEN32 = new System.Windows.Forms.Button();
+            this.btnBIEN31 = new System.Windows.Forms.Button();
+            this.btnBIEN30 = new System.Windows.Forms.Button();
+            this.btnBIEN21 = new System.Windows.Forms.Button();
+            this.btnBIEN29 = new System.Windows.Forms.Button();
+            this.btnBIEN22 = new System.Windows.Forms.Button();
+            this.btnBIEN23 = new System.Windows.Forms.Button();
+            this.btnBIEN24 = new System.Windows.Forms.Button();
+            this.btnBIEN25 = new System.Windows.Forms.Button();
+            this.btnBIEN26 = new System.Windows.Forms.Button();
+            this.btnBIEN27 = new System.Windows.Forms.Button();
+            this.btnBIEN28 = new System.Windows.Forms.Button();
+            this.btnBIEN36 = new System.Windows.Forms.Button();
+            this.btnBIEN35 = new System.Windows.Forms.Button();
+            this.btnBIEN34 = new System.Windows.Forms.Button();
+            this.btnBIEN33 = new System.Windows.Forms.Button();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBIEN_VENTA)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label12
@@ -115,7 +135,7 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(27, 90);
+            this.label17.Location = new System.Drawing.Point(2, 86);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(53, 43);
             this.label17.TabIndex = 117;
@@ -126,7 +146,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(398, 44);
+            this.label3.Location = new System.Drawing.Point(348, 34);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 57);
             this.label3.TabIndex = 116;
@@ -197,7 +217,7 @@
             // 
             this.txtTIPO_PAGO.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtTIPO_PAGO.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTIPO_PAGO.Location = new System.Drawing.Point(457, 76);
+            this.txtTIPO_PAGO.Location = new System.Drawing.Point(407, 66);
             this.txtTIPO_PAGO.Name = "txtTIPO_PAGO";
             this.txtTIPO_PAGO.Size = new System.Drawing.Size(215, 24);
             this.txtTIPO_PAGO.TabIndex = 108;
@@ -215,7 +235,7 @@
             this.btnBIEN16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN16.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN16.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN16.Location = new System.Drawing.Point(362, 458);
+            this.btnBIEN16.Location = new System.Drawing.Point(348, 288);
             this.btnBIEN16.Name = "btnBIEN16";
             this.btnBIEN16.Size = new System.Drawing.Size(119, 97);
             this.btnBIEN16.TabIndex = 99;
@@ -235,7 +255,7 @@
             this.btnBIEN15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN15.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN15.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN15.Location = new System.Drawing.Point(248, 458);
+            this.btnBIEN15.Location = new System.Drawing.Point(234, 288);
             this.btnBIEN15.Name = "btnBIEN15";
             this.btnBIEN15.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN15.TabIndex = 98;
@@ -255,7 +275,7 @@
             this.btnBIEN14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN14.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN14.Location = new System.Drawing.Point(134, 458);
+            this.btnBIEN14.Location = new System.Drawing.Point(120, 288);
             this.btnBIEN14.Name = "btnBIEN14";
             this.btnBIEN14.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN14.TabIndex = 97;
@@ -275,7 +295,7 @@
             this.btnBIEN13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN13.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN13.Location = new System.Drawing.Point(17, 458);
+            this.btnBIEN13.Location = new System.Drawing.Point(3, 288);
             this.btnBIEN13.Name = "btnBIEN13";
             this.btnBIEN13.Size = new System.Drawing.Size(118, 97);
             this.btnBIEN13.TabIndex = 96;
@@ -295,7 +315,7 @@
             this.btnBIEN12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN12.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN12.Location = new System.Drawing.Point(362, 363);
+            this.btnBIEN12.Location = new System.Drawing.Point(348, 193);
             this.btnBIEN12.Name = "btnBIEN12";
             this.btnBIEN12.Size = new System.Drawing.Size(119, 97);
             this.btnBIEN12.TabIndex = 95;
@@ -315,7 +335,7 @@
             this.btnBIEN11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN11.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN11.Location = new System.Drawing.Point(248, 363);
+            this.btnBIEN11.Location = new System.Drawing.Point(234, 193);
             this.btnBIEN11.Name = "btnBIEN11";
             this.btnBIEN11.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN11.TabIndex = 94;
@@ -335,7 +355,7 @@
             this.btnBIEN10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN10.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN10.Location = new System.Drawing.Point(134, 363);
+            this.btnBIEN10.Location = new System.Drawing.Point(120, 193);
             this.btnBIEN10.Name = "btnBIEN10";
             this.btnBIEN10.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN10.TabIndex = 93;
@@ -355,7 +375,7 @@
             this.btnBIEN08.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN08.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN08.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN08.Location = new System.Drawing.Point(362, 268);
+            this.btnBIEN08.Location = new System.Drawing.Point(348, 98);
             this.btnBIEN08.Name = "btnBIEN08";
             this.btnBIEN08.Size = new System.Drawing.Size(119, 97);
             this.btnBIEN08.TabIndex = 91;
@@ -375,7 +395,7 @@
             this.btnBIEN07.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN07.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN07.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN07.Location = new System.Drawing.Point(248, 268);
+            this.btnBIEN07.Location = new System.Drawing.Point(234, 98);
             this.btnBIEN07.Name = "btnBIEN07";
             this.btnBIEN07.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN07.TabIndex = 90;
@@ -395,7 +415,7 @@
             this.btnBIEN06.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN06.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN06.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN06.Location = new System.Drawing.Point(134, 268);
+            this.btnBIEN06.Location = new System.Drawing.Point(120, 98);
             this.btnBIEN06.Name = "btnBIEN06";
             this.btnBIEN06.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN06.TabIndex = 89;
@@ -415,7 +435,7 @@
             this.btnBIEN05.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN05.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN05.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN05.Location = new System.Drawing.Point(17, 268);
+            this.btnBIEN05.Location = new System.Drawing.Point(3, 98);
             this.btnBIEN05.Name = "btnBIEN05";
             this.btnBIEN05.Size = new System.Drawing.Size(118, 97);
             this.btnBIEN05.TabIndex = 88;
@@ -435,7 +455,7 @@
             this.btnBIEN09.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN09.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN09.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN09.Location = new System.Drawing.Point(17, 363);
+            this.btnBIEN09.Location = new System.Drawing.Point(3, 193);
             this.btnBIEN09.Name = "btnBIEN09";
             this.btnBIEN09.Size = new System.Drawing.Size(118, 97);
             this.btnBIEN09.TabIndex = 92;
@@ -455,7 +475,7 @@
             this.btnBIEN04.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN04.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN04.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN04.Location = new System.Drawing.Point(362, 173);
+            this.btnBIEN04.Location = new System.Drawing.Point(348, 3);
             this.btnBIEN04.Name = "btnBIEN04";
             this.btnBIEN04.Size = new System.Drawing.Size(119, 97);
             this.btnBIEN04.TabIndex = 87;
@@ -475,7 +495,7 @@
             this.btnBIEN03.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN03.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN03.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN03.Location = new System.Drawing.Point(248, 173);
+            this.btnBIEN03.Location = new System.Drawing.Point(234, 3);
             this.btnBIEN03.Name = "btnBIEN03";
             this.btnBIEN03.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN03.TabIndex = 86;
@@ -495,7 +515,7 @@
             this.btnBIEN02.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN02.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN02.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN02.Location = new System.Drawing.Point(134, 173);
+            this.btnBIEN02.Location = new System.Drawing.Point(120, 3);
             this.btnBIEN02.Name = "btnBIEN02";
             this.btnBIEN02.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN02.TabIndex = 85;
@@ -515,7 +535,7 @@
             this.btnBIEN01.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN01.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN01.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN01.Location = new System.Drawing.Point(17, 173);
+            this.btnBIEN01.Location = new System.Drawing.Point(3, 3);
             this.btnBIEN01.Name = "btnBIEN01";
             this.btnBIEN01.Size = new System.Drawing.Size(118, 97);
             this.btnBIEN01.TabIndex = 84;
@@ -529,7 +549,7 @@
             this.cboCLASE_BIEN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboCLASE_BIEN.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCLASE_BIEN.FormattingEnabled = true;
-            this.cboCLASE_BIEN.Location = new System.Drawing.Point(102, 85);
+            this.cboCLASE_BIEN.Location = new System.Drawing.Point(70, 84);
             this.cboCLASE_BIEN.Name = "cboCLASE_BIEN";
             this.cboCLASE_BIEN.Size = new System.Drawing.Size(218, 26);
             this.cboCLASE_BIEN.TabIndex = 83;
@@ -538,7 +558,7 @@
             // 
             this.txtPRECIO_VENTA.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtPRECIO_VENTA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPRECIO_VENTA.Location = new System.Drawing.Point(350, 138);
+            this.txtPRECIO_VENTA.Location = new System.Drawing.Point(350, 143);
             this.txtPRECIO_VENTA.Name = "txtPRECIO_VENTA";
             this.txtPRECIO_VENTA.Size = new System.Drawing.Size(131, 24);
             this.txtPRECIO_VENTA.TabIndex = 82;
@@ -549,7 +569,7 @@
             // 
             this.txtCANTIDAD_VENTA.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtCANTIDAD_VENTA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCANTIDAD_VENTA.Location = new System.Drawing.Point(102, 138);
+            this.txtCANTIDAD_VENTA.Location = new System.Drawing.Point(91, 140);
             this.txtCANTIDAD_VENTA.Name = "txtCANTIDAD_VENTA";
             this.txtCANTIDAD_VENTA.Size = new System.Drawing.Size(86, 24);
             this.txtCANTIDAD_VENTA.TabIndex = 81;
@@ -563,7 +583,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(288, 140);
+            this.label11.Location = new System.Drawing.Point(288, 146);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(56, 20);
             this.label11.TabIndex = 80;
@@ -574,37 +594,37 @@
             this.dgvBIEN_VENTA.AllowUserToAddRows = false;
             this.dgvBIEN_VENTA.AllowUserToResizeColumns = false;
             this.dgvBIEN_VENTA.AllowUserToResizeRows = false;
-            this.dgvBIEN_VENTA.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.dgvBIEN_VENTA.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.dgvBIEN_VENTA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBIEN_VENTA.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PaleTurquoise;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBIEN_VENTA.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.PaleTurquoise;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBIEN_VENTA.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvBIEN_VENTA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBIEN_VENTA.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvBIEN_VENTA.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvBIEN_VENTA.Location = new System.Drawing.Point(504, 173);
             this.dgvBIEN_VENTA.MultiSelect = false;
             this.dgvBIEN_VENTA.Name = "dgvBIEN_VENTA";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBIEN_VENTA.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBIEN_VENTA.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvBIEN_VENTA.RowHeadersVisible = false;
             this.dgvBIEN_VENTA.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.AliceBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            this.dgvBIEN_VENTA.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.AliceBlue;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            this.dgvBIEN_VENTA.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvBIEN_VENTA.Size = new System.Drawing.Size(643, 353);
             this.dgvBIEN_VENTA.TabIndex = 79;
             this.dgvBIEN_VENTA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBIEN_VENTA_CellContentClick);
@@ -614,7 +634,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(27, 140);
+            this.label10.Location = new System.Drawing.Point(8, 145);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(83, 25);
             this.label10.TabIndex = 78;
@@ -631,7 +651,7 @@
             this.button3.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(1017, 56);
+            this.button3.Location = new System.Drawing.Point(1021, 84);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(99, 66);
             this.button3.TabIndex = 77;
@@ -644,7 +664,7 @@
             // 
             this.txtPAGA.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtPAGA.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPAGA.Location = new System.Drawing.Point(901, 68);
+            this.txtPAGA.Location = new System.Drawing.Point(905, 96);
             this.txtPAGA.Name = "txtPAGA";
             this.txtPAGA.Size = new System.Drawing.Size(93, 47);
             this.txtPAGA.TabIndex = 76;
@@ -656,7 +676,7 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Gold;
-            this.label9.Location = new System.Drawing.Point(723, 68);
+            this.label9.Location = new System.Drawing.Point(727, 96);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(172, 47);
             this.label9.TabIndex = 75;
@@ -738,7 +758,7 @@
             this.cboTIPOPAGO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboTIPOPAGO.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTIPOPAGO.FormattingEnabled = true;
-            this.cboTIPOPAGO.Location = new System.Drawing.Point(457, 44);
+            this.cboTIPOPAGO.Location = new System.Drawing.Point(407, 34);
             this.cboTIPOPAGO.Name = "cboTIPOPAGO";
             this.cboTIPOPAGO.Size = new System.Drawing.Size(215, 26);
             this.cboTIPOPAGO.TabIndex = 71;
@@ -751,7 +771,7 @@
             this.cboTIPO_DOC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboTIPO_DOC.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTIPO_DOC.FormattingEnabled = true;
-            this.cboTIPO_DOC.Location = new System.Drawing.Point(17, 42);
+            this.cboTIPO_DOC.Location = new System.Drawing.Point(12, 34);
             this.cboTIPO_DOC.Name = "cboTIPO_DOC";
             this.cboTIPO_DOC.Size = new System.Drawing.Size(191, 26);
             this.cboTIPO_DOC.TabIndex = 70;
@@ -790,7 +810,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(987, 577);
+            this.button1.Location = new System.Drawing.Point(987, 573);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 62);
             this.button1.TabIndex = 67;
@@ -801,14 +821,15 @@
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.BackColor = System.Drawing.Color.Black;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.lblTOTAL);
             this.groupBox1.Controls.Add(this.lblIGV);
             this.groupBox1.Controls.Add(this.lblSUBTOTAL);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(503, 540);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(504, 540);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(465, 114);
@@ -965,7 +986,7 @@
             this.btnBIEN20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN20.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN20.Location = new System.Drawing.Point(362, 554);
+            this.btnBIEN20.Location = new System.Drawing.Point(348, 384);
             this.btnBIEN20.Name = "btnBIEN20";
             this.btnBIEN20.Size = new System.Drawing.Size(119, 97);
             this.btnBIEN20.TabIndex = 125;
@@ -985,7 +1006,7 @@
             this.btnBIEN19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN19.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN19.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN19.Location = new System.Drawing.Point(248, 554);
+            this.btnBIEN19.Location = new System.Drawing.Point(234, 384);
             this.btnBIEN19.Name = "btnBIEN19";
             this.btnBIEN19.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN19.TabIndex = 124;
@@ -1005,7 +1026,7 @@
             this.btnBIEN18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN18.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN18.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN18.Location = new System.Drawing.Point(133, 554);
+            this.btnBIEN18.Location = new System.Drawing.Point(119, 384);
             this.btnBIEN18.Name = "btnBIEN18";
             this.btnBIEN18.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN18.TabIndex = 123;
@@ -1025,26 +1046,393 @@
             this.btnBIEN17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBIEN17.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBIEN17.ForeColor = System.Drawing.Color.White;
-            this.btnBIEN17.Location = new System.Drawing.Point(18, 554);
+            this.btnBIEN17.Location = new System.Drawing.Point(4, 384);
             this.btnBIEN17.Name = "btnBIEN17";
             this.btnBIEN17.Size = new System.Drawing.Size(118, 97);
             this.btnBIEN17.TabIndex = 122;
             this.btnBIEN17.UseVisualStyleBackColor = false;
             this.btnBIEN17.Click += new System.EventHandler(this.btnBIEN17_Click_1);
             // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.btnBIEN36);
+            this.panel1.Controls.Add(this.btnBIEN35);
+            this.panel1.Controls.Add(this.btnBIEN34);
+            this.panel1.Controls.Add(this.btnBIEN33);
+            this.panel1.Controls.Add(this.btnBIEN32);
+            this.panel1.Controls.Add(this.btnBIEN31);
+            this.panel1.Controls.Add(this.btnBIEN30);
+            this.panel1.Controls.Add(this.btnBIEN21);
+            this.panel1.Controls.Add(this.btnBIEN29);
+            this.panel1.Controls.Add(this.btnBIEN22);
+            this.panel1.Controls.Add(this.btnBIEN23);
+            this.panel1.Controls.Add(this.btnBIEN24);
+            this.panel1.Controls.Add(this.btnBIEN25);
+            this.panel1.Controls.Add(this.btnBIEN26);
+            this.panel1.Controls.Add(this.btnBIEN27);
+            this.panel1.Controls.Add(this.btnBIEN28);
+            this.panel1.Controls.Add(this.btnBIEN01);
+            this.panel1.Controls.Add(this.btnBIEN02);
+            this.panel1.Controls.Add(this.btnBIEN20);
+            this.panel1.Controls.Add(this.btnBIEN03);
+            this.panel1.Controls.Add(this.btnBIEN19);
+            this.panel1.Controls.Add(this.btnBIEN04);
+            this.panel1.Controls.Add(this.btnBIEN18);
+            this.panel1.Controls.Add(this.btnBIEN09);
+            this.panel1.Controls.Add(this.btnBIEN17);
+            this.panel1.Controls.Add(this.btnBIEN05);
+            this.panel1.Controls.Add(this.btnBIEN06);
+            this.panel1.Controls.Add(this.btnBIEN07);
+            this.panel1.Controls.Add(this.btnBIEN08);
+            this.panel1.Controls.Add(this.btnBIEN10);
+            this.panel1.Controls.Add(this.btnBIEN11);
+            this.panel1.Controls.Add(this.btnBIEN12);
+            this.panel1.Controls.Add(this.btnBIEN13);
+            this.panel1.Controls.Add(this.btnBIEN14);
+            this.panel1.Controls.Add(this.btnBIEN15);
+            this.panel1.Controls.Add(this.btnBIEN16);
+            this.panel1.Location = new System.Drawing.Point(6, 173);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(492, 481);
+            this.panel1.TabIndex = 126;
+            // 
+            // btnBIEN32
+            // 
+            this.btnBIEN32.AccessibleName = "";
+            this.btnBIEN32.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN32.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN32.FlatAppearance.BorderSize = 2;
+            this.btnBIEN32.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN32.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN32.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN32.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN32.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN32.Location = new System.Drawing.Point(348, 671);
+            this.btnBIEN32.Name = "btnBIEN32";
+            this.btnBIEN32.Size = new System.Drawing.Size(119, 97);
+            this.btnBIEN32.TabIndex = 137;
+            this.btnBIEN32.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN31
+            // 
+            this.btnBIEN31.AccessibleName = "";
+            this.btnBIEN31.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN31.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN31.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN31.FlatAppearance.BorderSize = 2;
+            this.btnBIEN31.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN31.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN31.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN31.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN31.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN31.Location = new System.Drawing.Point(234, 671);
+            this.btnBIEN31.Name = "btnBIEN31";
+            this.btnBIEN31.Size = new System.Drawing.Size(117, 97);
+            this.btnBIEN31.TabIndex = 136;
+            this.btnBIEN31.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN30
+            // 
+            this.btnBIEN30.AccessibleName = "";
+            this.btnBIEN30.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN30.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN30.FlatAppearance.BorderSize = 2;
+            this.btnBIEN30.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN30.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN30.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN30.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN30.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN30.Location = new System.Drawing.Point(119, 671);
+            this.btnBIEN30.Name = "btnBIEN30";
+            this.btnBIEN30.Size = new System.Drawing.Size(117, 97);
+            this.btnBIEN30.TabIndex = 135;
+            this.btnBIEN30.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN21
+            // 
+            this.btnBIEN21.AccessibleName = "";
+            this.btnBIEN21.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN21.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN21.FlatAppearance.BorderSize = 2;
+            this.btnBIEN21.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN21.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN21.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN21.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN21.Location = new System.Drawing.Point(3, 480);
+            this.btnBIEN21.Name = "btnBIEN21";
+            this.btnBIEN21.Size = new System.Drawing.Size(118, 97);
+            this.btnBIEN21.TabIndex = 126;
+            this.btnBIEN21.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN29
+            // 
+            this.btnBIEN29.AccessibleName = "";
+            this.btnBIEN29.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN29.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN29.FlatAppearance.BorderSize = 2;
+            this.btnBIEN29.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN29.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN29.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN29.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN29.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN29.Location = new System.Drawing.Point(4, 671);
+            this.btnBIEN29.Name = "btnBIEN29";
+            this.btnBIEN29.Size = new System.Drawing.Size(118, 97);
+            this.btnBIEN29.TabIndex = 134;
+            this.btnBIEN29.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN22
+            // 
+            this.btnBIEN22.AccessibleName = "";
+            this.btnBIEN22.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN22.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN22.FlatAppearance.BorderSize = 2;
+            this.btnBIEN22.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN22.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN22.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN22.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN22.Location = new System.Drawing.Point(120, 480);
+            this.btnBIEN22.Name = "btnBIEN22";
+            this.btnBIEN22.Size = new System.Drawing.Size(117, 97);
+            this.btnBIEN22.TabIndex = 127;
+            this.btnBIEN22.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN23
+            // 
+            this.btnBIEN23.AccessibleName = "";
+            this.btnBIEN23.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN23.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN23.FlatAppearance.BorderSize = 2;
+            this.btnBIEN23.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN23.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN23.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN23.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN23.Location = new System.Drawing.Point(234, 480);
+            this.btnBIEN23.Name = "btnBIEN23";
+            this.btnBIEN23.Size = new System.Drawing.Size(117, 97);
+            this.btnBIEN23.TabIndex = 128;
+            this.btnBIEN23.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN24
+            // 
+            this.btnBIEN24.AccessibleName = "";
+            this.btnBIEN24.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN24.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN24.FlatAppearance.BorderSize = 2;
+            this.btnBIEN24.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN24.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN24.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN24.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN24.Location = new System.Drawing.Point(348, 480);
+            this.btnBIEN24.Name = "btnBIEN24";
+            this.btnBIEN24.Size = new System.Drawing.Size(119, 97);
+            this.btnBIEN24.TabIndex = 129;
+            this.btnBIEN24.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN25
+            // 
+            this.btnBIEN25.AccessibleName = "";
+            this.btnBIEN25.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN25.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN25.FlatAppearance.BorderSize = 2;
+            this.btnBIEN25.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN25.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN25.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN25.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN25.Location = new System.Drawing.Point(3, 575);
+            this.btnBIEN25.Name = "btnBIEN25";
+            this.btnBIEN25.Size = new System.Drawing.Size(118, 97);
+            this.btnBIEN25.TabIndex = 130;
+            this.btnBIEN25.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN26
+            // 
+            this.btnBIEN26.AccessibleName = "";
+            this.btnBIEN26.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN26.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN26.FlatAppearance.BorderSize = 2;
+            this.btnBIEN26.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN26.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN26.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN26.Location = new System.Drawing.Point(120, 575);
+            this.btnBIEN26.Name = "btnBIEN26";
+            this.btnBIEN26.Size = new System.Drawing.Size(117, 97);
+            this.btnBIEN26.TabIndex = 131;
+            this.btnBIEN26.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN27
+            // 
+            this.btnBIEN27.AccessibleName = "";
+            this.btnBIEN27.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN27.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN27.FlatAppearance.BorderSize = 2;
+            this.btnBIEN27.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN27.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN27.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN27.Location = new System.Drawing.Point(234, 575);
+            this.btnBIEN27.Name = "btnBIEN27";
+            this.btnBIEN27.Size = new System.Drawing.Size(117, 97);
+            this.btnBIEN27.TabIndex = 132;
+            this.btnBIEN27.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN28
+            // 
+            this.btnBIEN28.AccessibleName = "";
+            this.btnBIEN28.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN28.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN28.FlatAppearance.BorderSize = 2;
+            this.btnBIEN28.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN28.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN28.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN28.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN28.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN28.Location = new System.Drawing.Point(348, 575);
+            this.btnBIEN28.Name = "btnBIEN28";
+            this.btnBIEN28.Size = new System.Drawing.Size(119, 97);
+            this.btnBIEN28.TabIndex = 133;
+            this.btnBIEN28.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN36
+            // 
+            this.btnBIEN36.AccessibleName = "";
+            this.btnBIEN36.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN36.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN36.FlatAppearance.BorderSize = 2;
+            this.btnBIEN36.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN36.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN36.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN36.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN36.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN36.Location = new System.Drawing.Point(348, 765);
+            this.btnBIEN36.Name = "btnBIEN36";
+            this.btnBIEN36.Size = new System.Drawing.Size(119, 97);
+            this.btnBIEN36.TabIndex = 141;
+            this.btnBIEN36.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN35
+            // 
+            this.btnBIEN35.AccessibleName = "";
+            this.btnBIEN35.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN35.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN35.FlatAppearance.BorderSize = 2;
+            this.btnBIEN35.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN35.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN35.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN35.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN35.Location = new System.Drawing.Point(234, 765);
+            this.btnBIEN35.Name = "btnBIEN35";
+            this.btnBIEN35.Size = new System.Drawing.Size(117, 97);
+            this.btnBIEN35.TabIndex = 140;
+            this.btnBIEN35.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN34
+            // 
+            this.btnBIEN34.AccessibleName = "";
+            this.btnBIEN34.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN34.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN34.FlatAppearance.BorderSize = 2;
+            this.btnBIEN34.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN34.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN34.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN34.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN34.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN34.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN34.Location = new System.Drawing.Point(119, 765);
+            this.btnBIEN34.Name = "btnBIEN34";
+            this.btnBIEN34.Size = new System.Drawing.Size(117, 97);
+            this.btnBIEN34.TabIndex = 139;
+            this.btnBIEN34.UseVisualStyleBackColor = false;
+            // 
+            // btnBIEN33
+            // 
+            this.btnBIEN33.AccessibleName = "";
+            this.btnBIEN33.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBIEN33.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBIEN33.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN33.FlatAppearance.BorderSize = 2;
+            this.btnBIEN33.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN33.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN33.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBIEN33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBIEN33.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBIEN33.ForeColor = System.Drawing.Color.White;
+            this.btnBIEN33.Location = new System.Drawing.Point(4, 765);
+            this.btnBIEN33.Name = "btnBIEN33";
+            this.btnBIEN33.Size = new System.Drawing.Size(118, 97);
+            this.btnBIEN33.TabIndex = 138;
+            this.btnBIEN33.UseVisualStyleBackColor = false;
+            // 
+            // txtCliente
+            // 
+            this.txtCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCliente.Location = new System.Drawing.Point(812, 34);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(297, 26);
+            this.txtCliente.TabIndex = 128;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(656, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(152, 20);
+            this.label2.TabIndex = 129;
+            this.label2.Text = "Nombre del Cliente :";
+            // 
             // KIOSKOBEBIDAS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkCyan;
+            this.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.degradados_azules_1920x1200_127_1024x640__1_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1159, 705);
-            this.Controls.Add(this.dgvBIEN_VENTA);
+            this.ClientSize = new System.Drawing.Size(1159, 709);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtCliente);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnBIEN20);
-            this.Controls.Add(this.btnBIEN19);
-            this.Controls.Add(this.btnBIEN18);
-            this.Controls.Add(this.btnBIEN17);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label12);
@@ -1057,22 +1445,6 @@
             this.Controls.Add(this.LBLDIRECCION);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.txtTIPO_PAGO);
-            this.Controls.Add(this.btnBIEN16);
-            this.Controls.Add(this.btnBIEN15);
-            this.Controls.Add(this.btnBIEN14);
-            this.Controls.Add(this.btnBIEN13);
-            this.Controls.Add(this.btnBIEN12);
-            this.Controls.Add(this.btnBIEN11);
-            this.Controls.Add(this.btnBIEN10);
-            this.Controls.Add(this.btnBIEN08);
-            this.Controls.Add(this.btnBIEN07);
-            this.Controls.Add(this.btnBIEN06);
-            this.Controls.Add(this.btnBIEN05);
-            this.Controls.Add(this.btnBIEN09);
-            this.Controls.Add(this.btnBIEN04);
-            this.Controls.Add(this.btnBIEN03);
-            this.Controls.Add(this.btnBIEN02);
-            this.Controls.Add(this.btnBIEN01);
             this.Controls.Add(this.cboCLASE_BIEN);
             this.Controls.Add(this.txtPRECIO_VENTA);
             this.Controls.Add(this.txtCANTIDAD_VENTA);
@@ -1086,6 +1458,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCajaIDVentas);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.dgvBIEN_VENTA);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "KIOSKOBEBIDAS";
@@ -1097,6 +1470,7 @@
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1164,5 +1538,24 @@
         private System.Windows.Forms.Button btnBIEN18;
         private System.Windows.Forms.Button btnBIEN17;
         public System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnBIEN36;
+        private System.Windows.Forms.Button btnBIEN35;
+        private System.Windows.Forms.Button btnBIEN34;
+        private System.Windows.Forms.Button btnBIEN33;
+        private System.Windows.Forms.Button btnBIEN32;
+        private System.Windows.Forms.Button btnBIEN31;
+        private System.Windows.Forms.Button btnBIEN30;
+        private System.Windows.Forms.Button btnBIEN21;
+        private System.Windows.Forms.Button btnBIEN29;
+        private System.Windows.Forms.Button btnBIEN22;
+        private System.Windows.Forms.Button btnBIEN23;
+        private System.Windows.Forms.Button btnBIEN24;
+        private System.Windows.Forms.Button btnBIEN25;
+        private System.Windows.Forms.Button btnBIEN26;
+        private System.Windows.Forms.Button btnBIEN27;
+        private System.Windows.Forms.Button btnBIEN28;
+        private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -58,6 +58,9 @@ namespace WindowsFormsApplication1
         public String WEB = "";
         public double VUELTO = 0.00, PAGA = 0.00;
 
+        public string res = "";
+        public string res1 = "";
+        public string res2 = "";
 
         //public DataTable detallebien = new DataTable();
         public DataTable vPdt_detBien = new DataTable();
@@ -521,15 +524,31 @@ namespace WindowsFormsApplication1
                 E_OBJMANT_VENTADET.ID_SEDE = Properties.Settings.Default.id_sede;
                 E_OBJMANT_VENTADET.ID_PEDIDO = null;
                 E_OBJMANT_VENTADET.ID_CLIENTE = POP_id_cliente;
-                E_OBJMANT_VENTADET.CLIENTE = POP_descripcion;
+                if (Convert.ToDouble(lblTOTAL.Text) < 700)
+                {
+                    E_OBJMANT_VENTADET.CLIENTE = txtCliente.Text;
+                }
+                else
+                {
+                    E_OBJMANT_VENTADET.CLIENTE = POP_descripcion;
+                }
+               
                 E_OBJMANT_VENTADET.ACCION = "1";
 
-                N_OBJVENTAS.MANTENIMIENTO_VENTA(E_OBJMANT_VENTADET); //AQUI CARGO LA VENTA
+                res = N_OBJVENTAS.MANTENIMIENTO_VENTA(E_OBJMANT_VENTADET); //AQUI CARGO LA VENTA
                 MANTENIMIENTO_VENTADETALLE();// AQUI CARGO EL DETALLE DE LA VENTA
 
                 MANTENIMIENTO_CAJA_KARDEX();//AQUI LLAMO A MI PROCEDIMIENTO PAR GENERAR EL INGRESO EN CAJA KARDEX
-                
-                
+                if (res == "ok" && res1 == "ok" && res2 == "ok")
+                {
+                    MessageBox.Show("VENTA REGISTRADA CORRECTAMENTE", "Alerta de Venta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    P_IMPRIMIR();
+                }
+                else
+                {
+                    MessageBox.Show("VENTA NO REGISTRADA", "Alerta de Venta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
 
             }
             catch (Exception)
@@ -582,7 +601,7 @@ namespace WindowsFormsApplication1
                     //1 = VENTA_DIRECTA Y NECESITO GRABAR EL DETALLE DE PEDIDO Y EL DETALLE DE LA VENTA 
                     E_OBJMANT_VENTADET.GRABA_PEDIDO_DETALLE = "1";
 
-                    N_OBJVENTAS.MANTENIMIENTO_VENTADETALLE(E_OBJMANT_VENTADET);
+                    res1 = N_OBJVENTAS.MANTENIMIENTO_VENTADETALLE(E_OBJMANT_VENTADET);
                 }
             }
             catch (Exception)
@@ -661,7 +680,7 @@ namespace WindowsFormsApplication1
                 E_OBJCAJA_KARDEX.IMPORTE_CAJA = Convert.ToDouble(lblTOTAL.Text.ToString());
                 E_OBJCAJA_KARDEX.OPCION = 1;
 
-                N_OBJVENTAS.CAJA_KARDEX_MANTENIMIENTO(E_OBJCAJA_KARDEX);
+                res2 = N_OBJVENTAS.CAJA_KARDEX_MANTENIMIENTO(E_OBJCAJA_KARDEX);
             }
             catch (Exception)
             {
@@ -776,7 +795,7 @@ namespace WindowsFormsApplication1
 
                                 //cboTIPO_DOC.SelectedIndex = 0;//REGRESANDO EL TIPO DE DOC A BOLETA DE VENTA
                                 //cboCLASE_BIEN.SelectedIndex = 0;
-                                P_IMPRIMIR();
+                                
                                 POP_id_cliente = string.Empty;
                                 POP_ruc_dni = string.Empty;
                                 POP_descripcion = string.Empty;
