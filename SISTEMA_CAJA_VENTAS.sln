@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ICONOS", "ICONOS", "{563C98
 		ICONOS\p_c_ER-380.png = ICONOS\p_c_ER-380.png
 	EndProjectSection
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "APLICACION_VENTAS_12_01_17", "APLICACION_VENTAS_12_01_17\APLICACION_VENTAS_12_01_17.vdproj", "{EEF1BB75-B61E-4497-9BE4-DCF2C29C5004}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,8 @@ Global
 		{EA4DED1E-18F9-4F95-961A-1DE8CF7FACF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA4DED1E-18F9-4F95-961A-1DE8CF7FACF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA4DED1E-18F9-4F95-961A-1DE8CF7FACF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF1BB75-B61E-4497-9BE4-DCF2C29C5004}.Debug|Any CPU.ActiveCfg = Debug
+		{EEF1BB75-B61E-4497-9BE4-DCF2C29C5004}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
