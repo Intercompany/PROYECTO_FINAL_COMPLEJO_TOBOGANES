@@ -69,6 +69,9 @@ namespace WindowsFormsApplication1
         }
 
         #region OBJETOS
+      
+
+
         E_MANT_CLIENTE E_OBJCLIENTE = new E_MANT_CLIENTE();
         N_VENTA N_OBJCLIENTE = new N_VENTA();
         #endregion
@@ -406,12 +409,12 @@ namespace WindowsFormsApplication1
             // Show testDialog as a modal dialog and determine if DialogResult = OK.
             if (testDialog.ShowDialog(this) == DialogResult.OK)
             {
-                if (testDialog.txtCODIGO.Text == "CODDIONYS2016")
+                if (testDialog.txtCODIGO.Text == "NETBIOS2017")
                 {
                     P_IMPRIMIR_GRABAR();
                     testDialog.Close();
                 }
-                else if (testDialog.txtCODIGO.Text != "CODDIONYS2016")
+                else if (testDialog.txtCODIGO.Text != "NETBIOS2017")
                 {
                     string mensaje2= "INGRESE CODIGO CORRECTO";
                     testDialog.txtCODIGO.Text = string.Empty;
@@ -539,7 +542,7 @@ namespace WindowsFormsApplication1
             string SERIE;
             string TICKETNUMERO;
             con.Open();
-            SqlCommand cmv = new SqlCommand("SELECT V_ID_VENTA,V_NUMERO,E_DIRECCION,E_RUC,E_WEB_SITE,PV_SERIE_MAQREG, PV_DESCRIPCION FROM V_TABLA_VENTAS WHERE V_ID_VENTA = (SELECT TOP 1 V_ID_VENTA FROM V_TABLA_VENTAS ORDER BY V_ID_VENTA DESC)", con);
+            SqlCommand cmv = new SqlCommand("SELECT V_ID_VENTA,V_NUMERO,E_DIRECCION,E_RUC,E_WEB_SITE,PV_SERIE_MAQREG, PV_DESCRIPCION FROM V_TABLA_VENTAS WHERE V_ID_VENTA = '" + dgvClientes.CurrentRow.Cells[1].Value.ToString() + "'" /*"(SELECT TOP 1 V_ID_VENTA FROM V_TABLA_VENTAS ORDER BY V_ID_VENTA DESC)"*/, con);
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmv);
             da.Fill(dt);
@@ -556,10 +559,10 @@ namespace WindowsFormsApplication1
 
             /*----------------DETALLE REIMPRESIONES-------------------*/
             con.Open();
-            SqlCommand cmd = new SqlCommand("select	DV.VD_ID_VENTA,TV.V_NUMERO,DV.VD_ID_BIEN,DV.VD_ITEM,DV.VD_ITEM, DV.VD_CANTIDAD, DV.VD_PRECIO, DV.VD_IMPORTE,"+
-                                            " TV.v_igv,TV.V_TOTAL,DV.VD_SALDO_CANTIDAD, DV.B_DESCRIPCION, DV.B_ID_UNIDMED,TV.C_DESCRIPCION, TV.C_RUC_DNI " +
-                                            " from V_TABLA_VENTADETALLE AS DV INNER JOIN V_TABLA_VENTAS AS TV ON DV.VD_ID_VENTA = TV.V_ID_VENTA"+
-                                            " INNER JOIN V_CAJA_KADEX AS CK ON DV.VD_ID_VENTA = CK.ID_COMPVENT where   CK.ID_MOVIMIENTO = '"+MOVIMIENTHO+"' ", con);
+            SqlCommand cmd = new SqlCommand("select	DV.VD_ID_VENTA,TV.V_NUMERO,DV.VD_ID_BIEN,DV.VD_ITEM,DV.VD_ITEM, DV.VD_CANTIDAD, DV.VD_PRECIO, DV.VD_IMPORTE," +
+                                           " TV.v_igv,TV.V_TOTAL,DV.VD_SALDO_CANTIDAD, DV.B_DESCRIPCION, DV.B_ID_UNIDMED,TV.C_DESCRIPCION, TV.C_RUC_DNI " +
+                                           " from V_TABLA_VENTADETALLE AS DV INNER JOIN V_TABLA_VENTAS AS TV ON DV.VD_ID_VENTA = TV.V_ID_VENTA" +
+                                           " INNER JOIN V_CAJA_KADEX AS CK ON DV.VD_ID_VENTA = CK.ID_COMPVENT where   CK.ID_COMPVENT = '" + dgvClientes.CurrentRow.Cells[1].Value.ToString() + "' ", con);
             DataTable dt2 = new DataTable();
             SqlDataAdapter dap = new SqlDataAdapter(cmd);
             dap.Fill(dt2);
@@ -629,7 +632,45 @@ namespace WindowsFormsApplication1
             Ticket1.TextoCentro("Vuelva pronto!! Lo esperamos"); // imprime en el centro "Venta mostrador"
             Ticket1.CortaTicket();
 
-            
+            DataTable DATOS_VENTA = new DataTable();                         //ESTO ME PERMITE CREAR EL DATATABLE PARA LLAMAR A LOS DATOS DE MI VENTA
+            /*string ID_VENTA = E_OBJMANT_VENTADET.ID_VENTA;*/                   // ESTO PERMITE GENERAR LA VARIABLE DEL ID_VENTA
+            DATOS_VENTA = N_OBJCLIENTE.CAPTURAR_TABLA_VENTA(ID_VENTA, Program.id_sede);        //ESTO ME PERMITE ALMACENAR TODOS LOS DATOS EN UN DATATABLE PARA PODER ACCEDER A ELLO EN TODO MOMENTO
+
+            DataTable DATOS_VENTADETALLE = new DataTable();                  //ESTO ME PERMITE CREAR EL DATATABLE PARA LLAMAR A LOS DATOS DE MI VENTA_DETALLE
+            /*string COD_VENTA = E_OBJMANT_VENTADET.ID_VENTA;  */          // ESTO PERMITE GENERAR LA VARIABLE DEL ID_VENTA
+            DATOS_VENTADETALLE = N_OBJCLIENTE.CAPTURAR_TABLA_VENTADETALLE(ID_VENTA); //ESTO ME PERMITE ALMACENAR TODOS LOS DATOS EN UN DATATABLE PARA PODER ACCEDER A ELLO EN TODO MOMENTO
+
+            /*---------------------IMPRIMIR TICKET PEQUEÑO-------------------------*/
+            for (int f = 0; f < DATOS_VENTA.Rows.Count; f++)
+            {
+                if (DATOS_VENTADETALLE.Rows[f]["B_EMITE_TICKET"].Equals(true))
+                {
+                    //Ticket1.TextoCentro( DATOS_VENTA.Rows[0][36].ToString()); //aqui va el nombre de la empresa
+                    Ticket1.TextoCentro(Properties.Settings.Default.nomsede); //nombre de la sede
+                    Ticket1.LineasGuion();
+                    Ticket1.TextoCentro("TICKET DESPACHO");
+                    Ticket1.TextoCentro("REFERENCIA: " + DATOS_VENTA.Rows[0][3].ToString() + " " + DATOS_VENTA.Rows[0][1].ToString() + "-" + DATOS_VENTA.Rows[0][2].ToString()); //aqui va el tipo_documento / el numero de serie / y el numero correlativo
+                    Ticket1.LineasGuion();
+                    Ticket1.TextoCentro("");
+                    Ticket1.TextoCentro("CANTIDAD: " + Convert.ToInt32(DATOS_VENTADETALLE.Rows[f]["VD_CANTIDAD"]) + "");
+                    Ticket1.TextoCentro("");
+                    Ticket1.TextoCentro("DESCRIPCION: ");
+                    Ticket1.TextoCentro(DATOS_VENTADETALLE.Rows[f]["B_DESCRIPCION"].ToString());
+                    Ticket1.TextoCentro("");
+                    Ticket1.LineasGuion();
+                    Ticket1.TextoCentro("ATENCION: " + DATOS_VENTA.Rows[0]["V_CLIENTE"].ToString());
+                    Ticket1.TextoCentro(DATOS_VENTA.Rows[0][4].ToString());   //aqui va la fecha Y EL ID_VENTA
+                    Ticket1.TextoCentro("ID_VENTA: " + DATOS_VENTA.Rows[0][0].ToString());//aqui va el codigo de venta
+                    Ticket1.TextoCentro("AGRADECEMOS SU PREFERENCIA!!!");
+                    Ticket1.CortaTicket();
+                }
+            }
+
+            /*-------------------------------------------------------------------------*/
+
+
+
+
         }
 
         #region CODIGO IMPRESION

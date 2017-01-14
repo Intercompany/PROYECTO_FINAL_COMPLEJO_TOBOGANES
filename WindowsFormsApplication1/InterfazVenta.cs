@@ -1157,7 +1157,7 @@ namespace WindowsFormsApplication1
             LBLPROV.Text = "";
             LBLDIST.Text = "";
             */
-            /*---------------------IMPRIMIR TICKET POR PRDUCTO-------------------------*/
+            /*---------------------IMPRIMIR TICKET PEQUEÑO-------------------------*/
             for (int f = 0; f < dgvBIEN_VENTA.Rows.Count; f++)
             {
                 if (DATOS_VENTADETALLE.Rows[f]["B_EMITE_TICKET"].Equals(true))
