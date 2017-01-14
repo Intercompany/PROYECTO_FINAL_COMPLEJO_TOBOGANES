@@ -366,7 +366,7 @@ namespace WindowsFormsApplication1
             if (Properties.Settings.Default.id_caja != string.Empty) //SI ES DIFERENTE DE VACIO ES PORQUE EL USUARIO  ID_USUARIO Y EL PUNTO DE VENTA ID_PUNTOVENTA TIENE CAJA APERTURADA
             {
                 InterfazVenta objventa = new InterfazVenta();
-                string NUMERHO = "";
+                string NUMERHO = "000";
                 if (con.State == ConnectionState.Open)
                 {
                     con.Close();
@@ -378,12 +378,17 @@ namespace WindowsFormsApplication1
                 DataTable dtt = new DataTable();
                 SqlDataAdapter dda = new SqlDataAdapter(cmd);
                 dda.Fill(dtt);
-                
-                NUMERHO = dtt.Rows[0][0].ToString();
+                try
+                {
+                    
+                        NUMERHO = dtt.Rows[0][0].ToString();
+                   
+                    
+                }
+                catch{ }
                 Properties.Settings.Default.numero_vr = NUMERHO;
 
                 con.Close();
-
                 if (Properties.Settings.Default.id_sede == "003" && Properties.Settings.Default.punto_venta == "PV015")
                 {
                     KIOSKOBEBIDAS objkio = new KIOSKOBEBIDAS();

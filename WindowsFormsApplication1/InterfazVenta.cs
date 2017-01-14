@@ -1138,10 +1138,7 @@ namespace WindowsFormsApplication1
             Ticket1.TextoCentro("CAJERO: " + Properties.Settings.Default.nomempleado);
             Ticket1.TextoCentro("PAGINA WEB: " + WEB);
             Ticket1.TextoCentro("ID VENTA: " + ID_VENTA);
-
-
-
-
+                        
             // Ticket1.TextoCentro(WEB);
             // imprime linea con total
             Ticket1.LineasGuion();
