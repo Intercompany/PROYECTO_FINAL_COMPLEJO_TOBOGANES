@@ -130,6 +130,9 @@
   <data name="nuevo-usuario" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nuevo-usuario1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="abstract_background_red-1024x7681" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\abstract_background_red-1024x7682.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="abstract_background_red-1024x768" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\abstract_background_red-1024x7681.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,6 +147,9 @@
   </data>
   <data name="movimiento-de-la-mano" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movimiento-de-la-mano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="portapapeles (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\portapapeles (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="impresora (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\impresora (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,6 +205,9 @@
   <data name="buscando2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buscando2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="salida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\salida.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="2545" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2545.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -214,7 +223,7 @@
   <data name="74370-OEB5DU-339" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\74370-OEB5DU-339.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="abstract_background_red-1024x7681" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\abstract_background_red-1024x7682.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="portapapeles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\portapapeles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

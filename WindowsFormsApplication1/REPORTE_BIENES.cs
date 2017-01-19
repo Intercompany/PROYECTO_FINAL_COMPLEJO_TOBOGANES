@@ -34,7 +34,7 @@ namespace WindowsFormsApplication1
 
         void LLENAR_CLASE_BIEN()
         {
-            if (Properties.Settings.Default.serie == "0003")
+            if (Properties.Settings.Default.serie == "0004" && Properties.Settings.Default.id_sede == "001" )
             { //AQUI VAN LOS BIENES DE LA SERIE 0003
 
 
@@ -53,6 +53,26 @@ namespace WindowsFormsApplication1
                 cboCLASEBIEN.ValueMember = "value";
                 cboCLASEBIEN.SelectedIndex = 0;
                                 
+            }
+            else if ((Properties.Settings.Default.serie == "0006" && Properties.Settings.Default.id_sede == "003") ||(Properties.Settings.Default.serie == "0005" && Properties.Settings.Default.id_sede == "003"))
+            { //AQUI VAN LOS BIENES DE LA SERIE 0003
+
+
+                List<ListaTipoProd> List = new List<ListaTipoProd>();
+
+                List.Add(new ListaTipoProd { texto = "TODOS", value = "TODOS" });
+                List.Add(new ListaTipoProd { texto = "BEBIDAS", value = "BEBIDAS" });
+                List.Add(new ListaTipoProd { texto = "BEBIDAS ALCOHOLICAS", value = "BEBIDAS ALCOHOLICAS" });
+                List.Add(new ListaTipoProd { texto = "COMIDA CRIOLLA", value = "COMIDA CRIOLLA" });
+                List.Add(new ListaTipoProd { texto = "COMIDA TIPICA", value = "COMIDA TIPICA" });
+                List.Add(new ListaTipoProd { texto = "COMIDA MARINA", value = "COMIDA MARINA" });
+                List.Add(new ListaTipoProd { texto = "POLLOS Y PARRILLAS", value = "POLLOS Y PARRILLAS" });
+
+                cboCLASEBIEN.DataSource = List;
+                cboCLASEBIEN.DisplayMember = "texto";
+                cboCLASEBIEN.ValueMember = "value";
+                cboCLASEBIEN.SelectedIndex = 0;
+
             }
             else
             {
@@ -80,7 +100,12 @@ namespace WindowsFormsApplication1
             string NOMBRE_CLASE = cboCLASEBIEN.SelectedValue.ToString();
 
             dgvLISTARBIENES.DataSource = OBJBIEN.REPORTE_BIENES_AGRUPADOS(SERIE, SEDE, FECHA_INI, FECHA_FIN, NOMBRE_CLASE);
-     
+            dgvLISTARBIENES.Columns[0].Width = 70;
+            dgvLISTARBIENES.Columns[1].Width = 110;
+            dgvLISTARBIENES.Columns[2].Width = 350;
+            dgvLISTARBIENES.Columns[3].Width = 70;
+            dgvLISTARBIENES.Columns[4].Width = 60;
+
         }
 
         void ACTUALIZAR_TOTALES()
@@ -104,6 +129,19 @@ namespace WindowsFormsApplication1
         {
             FILTRAR_BIEN();
             ACTUALIZAR_TOTALES();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSAlir_Click(object sender, EventArgs e)
+        {
+            
+            CAJA cj = new CAJA();
+            cj.Show();
+            this.Close();
         }
 
         //void IMPRIMIR_SPOOL()

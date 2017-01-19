@@ -373,9 +373,39 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap portapapeles {
+            get {
+                object obj = ResourceManager.GetObject("portapapeles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap portapapeles__1_ {
+            get {
+                object obj = ResourceManager.GetObject("portapapeles (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap reportar {
             get {
                 object obj = ResourceManager.GetObject("reportar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap salida {
+            get {
+                object obj = ResourceManager.GetObject("salida", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

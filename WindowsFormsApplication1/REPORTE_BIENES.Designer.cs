@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(REPORTE_BIENES));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnIMPRIMIR = new System.Windows.Forms.Button();
             this.btnFILTRARBIEN = new System.Windows.Forms.Button();
             this.cboCLASEBIEN = new System.Windows.Forms.ComboBox();
@@ -45,43 +45,23 @@
             this.LBLTOTAL = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.btnSAlir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLISTARBIENES)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.btnIMPRIMIR);
-            this.groupBox1.Controls.Add(this.btnFILTRARBIEN);
-            this.groupBox1.Controls.Add(this.cboCLASEBIEN);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtFECHAFINAL);
-            this.groupBox1.Controls.Add(this.txtFECHAINI);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Enabled = false;
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(12, 54);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(711, 181);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "BUSQUEDA";
             // 
             // btnIMPRIMIR
             // 
             this.btnIMPRIMIR.BackColor = System.Drawing.Color.Transparent;
             this.btnIMPRIMIR.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnIMPRIMIR.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnIMPRIMIR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIMPRIMIR.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIMPRIMIR.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIMPRIMIR.ForeColor = System.Drawing.Color.White;
             this.btnIMPRIMIR.Image = global::WindowsFormsApplication1.Properties.Resources.impresora__1_;
             this.btnIMPRIMIR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIMPRIMIR.Location = new System.Drawing.Point(544, 55);
+            this.btnIMPRIMIR.Location = new System.Drawing.Point(541, 147);
             this.btnIMPRIMIR.Name = "btnIMPRIMIR";
-            this.btnIMPRIMIR.Size = new System.Drawing.Size(147, 43);
+            this.btnIMPRIMIR.Size = new System.Drawing.Size(150, 43);
             this.btnIMPRIMIR.TabIndex = 7;
             this.btnIMPRIMIR.Text = "IMPRIMIR";
             this.btnIMPRIMIR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -92,13 +72,15 @@
             this.btnFILTRARBIEN.BackColor = System.Drawing.Color.Transparent;
             this.btnFILTRARBIEN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnFILTRARBIEN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnFILTRARBIEN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnFILTRARBIEN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFILTRARBIEN.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFILTRARBIEN.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFILTRARBIEN.ForeColor = System.Drawing.Color.White;
             this.btnFILTRARBIEN.Image = global::WindowsFormsApplication1.Properties.Resources.buscando3;
             this.btnFILTRARBIEN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFILTRARBIEN.Location = new System.Drawing.Point(544, 111);
+            this.btnFILTRARBIEN.Location = new System.Drawing.Point(541, 208);
             this.btnFILTRARBIEN.Name = "btnFILTRARBIEN";
-            this.btnFILTRARBIEN.Size = new System.Drawing.Size(147, 44);
+            this.btnFILTRARBIEN.Size = new System.Drawing.Size(150, 44);
             this.btnFILTRARBIEN.TabIndex = 6;
             this.btnFILTRARBIEN.Text = "BUSCAR";
             this.btnFILTRARBIEN.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -107,54 +89,63 @@
             // 
             // cboCLASEBIEN
             // 
+            this.cboCLASEBIEN.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCLASEBIEN.FormattingEnabled = true;
-            this.cboCLASEBIEN.Location = new System.Drawing.Point(168, 136);
+            this.cboCLASEBIEN.Location = new System.Drawing.Point(181, 185);
             this.cboCLASEBIEN.Name = "cboCLASEBIEN";
-            this.cboCLASEBIEN.Size = new System.Drawing.Size(272, 28);
+            this.cboCLASEBIEN.Size = new System.Drawing.Size(223, 29);
             this.cboCLASEBIEN.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 139);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(38, 188);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 20);
+            this.label4.Size = new System.Drawing.Size(106, 21);
             this.label4.TabIndex = 4;
-            this.label4.Text = "CLASE BIEN:";
+            this.label4.Text = "CLASE BIEN :";
             // 
             // txtFECHAFINAL
             // 
-            this.txtFECHAFINAL.Location = new System.Drawing.Point(168, 90);
+            this.txtFECHAFINAL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFECHAFINAL.Location = new System.Drawing.Point(181, 141);
             this.txtFECHAFINAL.Name = "txtFECHAFINAL";
-            this.txtFECHAFINAL.Size = new System.Drawing.Size(318, 27);
+            this.txtFECHAFINAL.Size = new System.Drawing.Size(318, 29);
             this.txtFECHAFINAL.TabIndex = 3;
             // 
             // txtFECHAINI
             // 
-            this.txtFECHAINI.Location = new System.Drawing.Point(168, 41);
+            this.txtFECHAINI.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFECHAINI.Location = new System.Drawing.Point(181, 98);
             this.txtFECHAINI.Name = "txtFECHAINI";
-            this.txtFECHAINI.Size = new System.Drawing.Size(318, 27);
+            this.txtFECHAINI.Size = new System.Drawing.Size(318, 29);
             this.txtFECHAINI.TabIndex = 2;
             this.txtFECHAINI.Value = new System.DateTime(2017, 1, 19, 16, 22, 4, 0);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 95);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(38, 147);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 20);
+            this.label3.Size = new System.Drawing.Size(117, 21);
             this.label3.TabIndex = 1;
-            this.label3.Text = "FECHA FINAL:";
+            this.label3.Text = "FECHA FINAL :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(20, 46);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(38, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 20);
+            this.label2.Size = new System.Drawing.Size(129, 21);
             this.label2.TabIndex = 0;
             this.label2.Text = "FECHA INICIAL :";
             // 
@@ -174,11 +165,22 @@
             // 
             this.dgvLISTARBIENES.AllowUserToAddRows = false;
             this.dgvLISTARBIENES.AllowUserToDeleteRows = false;
+            this.dgvLISTARBIENES.AllowUserToResizeColumns = false;
+            this.dgvLISTARBIENES.AllowUserToResizeRows = false;
             this.dgvLISTARBIENES.BackgroundColor = System.Drawing.Color.Brown;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvLISTARBIENES.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvLISTARBIENES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLISTARBIENES.Location = new System.Drawing.Point(12, 281);
             this.dgvLISTARBIENES.Name = "dgvLISTARBIENES";
             this.dgvLISTARBIENES.ReadOnly = true;
+            this.dgvLISTARBIENES.RowHeadersVisible = false;
             this.dgvLISTARBIENES.Size = new System.Drawing.Size(711, 395);
             this.dgvLISTARBIENES.TabIndex = 2;
             // 
@@ -242,6 +244,26 @@
             this.label9.TabIndex = 7;
             this.label9.Text = "TOTAL";
             // 
+            // btnSAlir
+            // 
+            this.btnSAlir.BackColor = System.Drawing.Color.Transparent;
+            this.btnSAlir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnSAlir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnSAlir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnSAlir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSAlir.Font = new System.Drawing.Font("Segoe UI Black", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSAlir.ForeColor = System.Drawing.Color.White;
+            this.btnSAlir.Image = global::WindowsFormsApplication1.Properties.Resources.salida;
+            this.btnSAlir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSAlir.Location = new System.Drawing.Point(541, 81);
+            this.btnSAlir.Name = "btnSAlir";
+            this.btnSAlir.Size = new System.Drawing.Size(150, 44);
+            this.btnSAlir.TabIndex = 8;
+            this.btnSAlir.Text = "SALIR";
+            this.btnSAlir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSAlir.UseVisualStyleBackColor = false;
+            this.btnSAlir.Click += new System.EventHandler(this.btnSAlir_Click);
+            // 
             // REPORTE_BIENES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,22 +271,28 @@
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.abstract_background_red_1024x7681;
             this.ClientSize = new System.Drawing.Size(738, 683);
+            this.Controls.Add(this.btnSAlir);
+            this.Controls.Add(this.cboCLASEBIEN);
+            this.Controls.Add(this.btnFILTRARBIEN);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnIMPRIMIR);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.LBLTOTAL);
             this.Controls.Add(this.lblTOTCANTIDAD);
+            this.Controls.Add(this.txtFECHAFINAL);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dgvLISTARBIENES);
+            this.Controls.Add(this.txtFECHAINI);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.dgvLISTARBIENES);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "REPORTE_BIENES";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "REPORTE_BIENES";
             this.Load += new System.EventHandler(this.REPORTE_BIENES_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLISTARBIENES)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -272,8 +300,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -289,5 +315,6 @@
         public System.Windows.Forms.Button btnFILTRARBIEN;
         public System.Windows.Forms.Label lblTOTCANTIDAD;
         public System.Windows.Forms.Label LBLTOTAL;
+        public System.Windows.Forms.Button btnSAlir;
     }
 }

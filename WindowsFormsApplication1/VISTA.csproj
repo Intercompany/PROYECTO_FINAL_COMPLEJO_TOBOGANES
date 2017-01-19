@@ -262,6 +262,9 @@
     <Content Include="Resources\nuevo-usuario.png" />
     <None Include="Resources\nuevo-usuario1.png" />
     <None Include="Resources\reportar.ico" />
+    <None Include="Resources\salida.ico" />
+    <None Include="Resources\portapapeles %281%29.ico" />
+    <None Include="Resources\portapapeles.png" />
     <Content Include="Resources\textura-de-gradiente-de-acuarela-en-tonos-azules_23-2147508391.jpg" />
     <None Include="Resources\textura-de-gradiente-de-acuarela-en-tonos-azules_23-21475083911.jpg" />
     <None Include="Resources\flecha-ampliar.png" />
