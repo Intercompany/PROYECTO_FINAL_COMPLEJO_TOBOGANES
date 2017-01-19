@@ -126,6 +126,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REPORTE_BIENES.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REPORTE_BIENES.Designer.cs">
+      <DependentUpon>REPORTE_BIENES.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -158,6 +164,9 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REPORTE_BIENES.resx">
+      <DependentUpon>REPORTE_BIENES.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -239,12 +248,20 @@
     <None Include="Resources\74370-OEB5DU-339.jpg" />
     <Content Include="Resources\abstract_background_red-1024x768.jpg" />
     <None Include="Resources\abstract_background_red-1024x7681.jpg" />
+    <None Include="Resources\analitica.png" />
+    <None Include="Resources\buscando.png" />
+    <None Include="Resources\buscando1.png" />
+    <None Include="Resources\buscando2.png" />
+    <None Include="Resources\buscando.ico" />
+    <None Include="Resources\abstract_background_red-1024x7682.jpg" />
     <Content Include="Resources\fondo-tricolor-con-degradado_1095-64.jpg" />
     <None Include="Resources\fondo-tricolor-con-degradado_1095-641.jpg" />
+    <None Include="Resources\impresora %281%29.ico" />
     <Content Include="Resources\large-background-1024x724.jpg" />
     <None Include="Resources\large-background-1024x7241.jpg" />
     <Content Include="Resources\nuevo-usuario.png" />
     <None Include="Resources\nuevo-usuario1.png" />
+    <None Include="Resources\reportar.ico" />
     <Content Include="Resources\textura-de-gradiente-de-acuarela-en-tonos-azules_23-2147508391.jpg" />
     <None Include="Resources\textura-de-gradiente-de-acuarela-en-tonos-azules_23-21475083911.jpg" />
     <None Include="Resources\flecha-ampliar.png" />

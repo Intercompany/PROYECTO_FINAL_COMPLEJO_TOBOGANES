@@ -57,6 +57,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblPvta = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -300,17 +301,28 @@
             this.lblPvta.ForeColor = System.Drawing.Color.White;
             this.lblPvta.Name = "lblPvta";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.MediumPurple;
+            this.button2.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.analitica;
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // CAJA
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
+            this.Controls.Add(this.btnEXPANDIR);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCONTRAER);
-            this.Controls.Add(this.btnEXPANDIR);
-            this.Controls.Add(this.btnVentaRapida);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnMOVIMIENTOS);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.lblMENSAJES);
             this.Controls.Add(this.btnSalirCaja);
@@ -328,6 +340,9 @@
             this.Controls.Add(this.txtFchaApertura);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnVentaRapida);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnMOVIMIENTOS);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CAJA";
@@ -370,5 +385,6 @@
         private System.Windows.Forms.Label lblPvta;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button2;
     }
 }

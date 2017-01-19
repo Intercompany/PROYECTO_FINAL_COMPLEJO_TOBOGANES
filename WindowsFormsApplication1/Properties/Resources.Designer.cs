@@ -103,9 +103,29 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap abstract_background_red_1024x7681 {
+            get {
+                object obj = ResourceManager.GetObject("abstract_background_red-1024x7681", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap agrandar {
             get {
                 object obj = ResourceManager.GetObject("agrandar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap analitica {
+            get {
+                object obj = ResourceManager.GetObject("analitica", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +146,46 @@ namespace WindowsFormsApplication1.Properties {
         public static System.Drawing.Bitmap b_13092560299011 {
             get {
                 object obj = ResourceManager.GetObject("b_13092560299011", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap buscando {
+            get {
+                object obj = ResourceManager.GetObject("buscando", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap buscando1 {
+            get {
+                object obj = ResourceManager.GetObject("buscando1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap buscando2 {
+            get {
+                object obj = ResourceManager.GetObject("buscando2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap buscando3 {
+            get {
+                object obj = ResourceManager.GetObject("buscando3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,6 +283,16 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap impresora__1_ {
+            get {
+                object obj = ResourceManager.GetObject("impresora (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap large_background_1024x724 {
             get {
                 object obj = ResourceManager.GetObject("large-background-1024x724", resourceCulture);
@@ -296,6 +366,16 @@ namespace WindowsFormsApplication1.Properties {
         public static System.Drawing.Bitmap nuevo_usuario {
             get {
                 object obj = ResourceManager.GetObject("nuevo-usuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap reportar {
+            get {
+                object obj = ResourceManager.GetObject("reportar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

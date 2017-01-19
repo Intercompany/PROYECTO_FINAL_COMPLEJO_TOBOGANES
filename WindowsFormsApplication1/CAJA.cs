@@ -463,5 +463,12 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {////REPORTE BIENES
+            REPORTE_BIENES RB = new REPORTE_BIENES();
+            RB.ShowDialog();
+            this.Hide();
+        }
     }
 }
