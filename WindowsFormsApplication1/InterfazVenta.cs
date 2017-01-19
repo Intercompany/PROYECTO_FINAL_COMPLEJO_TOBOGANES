@@ -1040,10 +1040,7 @@ namespace WindowsFormsApplication1
             string NUMERO = "";
             string MAQREG = "";
             string puntoventadesc = "";
-
-
-            
-
+                        
             con.Open();
             
             SqlCommand cmv = new SqlCommand(" SELECT VT.V_ID_VENTA,VT.V_NUMERO,VT.E_DIRECCION,VT.E_RUC,VT.E_WEB_SITE,VT.PV_SERIE_MAQREG,VT.PV_DESCRIPCION,VT.V_SERIE "+
