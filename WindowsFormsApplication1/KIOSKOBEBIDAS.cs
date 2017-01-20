@@ -51,9 +51,9 @@ namespace WindowsFormsApplication1
         public int suma = 0;
         #endregion
 
-        public string[] valor = new string[20];
-        public string[] idbien = new string[20];
-        public string[] PRECIO_BIEN = new string[20];
+        public string[] valor = new string[36];
+        public string[] idbien = new string[36];
+        public string[] PRECIO_BIEN = new string[36];
         public String MON = "";
         public String WEB = "";
         public double VUELTO = 0.00, PAGA = 0.00;
@@ -205,7 +205,7 @@ namespace WindowsFormsApplication1
             for (int i = 0; i < dt.Rows.Count; i++)
             {
 
-                if (i < 20) //esto controla los 16 botones asignados para los platos
+                if (i < 36) //esto controla los 16 botones asignados para los platos
                 {
                     valor[i] = dt.Rows[i][1].ToString();     //esto permite obtener la descripcion y el precio de los bienes
                     idbien[i] = dt.Rows[i][0].ToString();     //esto permite obtener los codigos de cada bien que contiene el datatable
@@ -232,7 +232,22 @@ namespace WindowsFormsApplication1
                 btnBIEN18.Text = valor[17];
                 btnBIEN19.Text = valor[18];
                 btnBIEN20.Text = valor[19];
-
+                btnBIEN21.Text = valor[20];
+                btnBIEN22.Text = valor[21];
+                btnBIEN23.Text = valor[22];
+                btnBIEN24.Text = valor[23];
+                btnBIEN25.Text = valor[24];
+                btnBIEN26.Text = valor[25];
+                btnBIEN27.Text = valor[26];
+                btnBIEN28.Text = valor[27];
+                btnBIEN29.Text = valor[28];
+                btnBIEN30.Text = valor[29];
+                btnBIEN31.Text = valor[30];
+                btnBIEN32.Text = valor[31];
+                btnBIEN33.Text = valor[32];
+                btnBIEN34.Text = valor[33];
+                btnBIEN35.Text = valor[34];
+                btnBIEN36.Text = valor[35];
 
             }
 
@@ -1607,6 +1622,134 @@ namespace WindowsFormsApplication1
         private void cboTIPOPAGO_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboTIPOPAGO.SelectedIndex == 0) { txtTIPO_PAGO.Enabled = false; } else { txtTIPO_PAGO.Enabled = true; }
+        }
+
+        private void btnBIEN21_Click(object sender, EventArgs e)
+        {
+            if (idbien[20] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[20].ToString(), valor[20].ToString(), PRECIO_BIEN[20].ToString());
+            }
+        }
+
+        private void btnBIEN22_Click(object sender, EventArgs e)
+        {
+            if (idbien[21] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[21].ToString(), valor[21].ToString(), PRECIO_BIEN[21].ToString());
+            }
+        }
+
+        private void btnBIEN23_Click(object sender, EventArgs e)
+        {
+            if (idbien[22] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[22].ToString(), valor[22].ToString(), PRECIO_BIEN[22].ToString());
+            }
+        }
+
+        private void btnBIEN24_Click(object sender, EventArgs e)
+        {
+            if (idbien[23] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[23].ToString(), valor[23].ToString(), PRECIO_BIEN[23].ToString());
+            }
+        }
+
+        private void btnBIEN25_Click(object sender, EventArgs e)
+        {
+            if (idbien[24] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[24].ToString(), valor[24].ToString(), PRECIO_BIEN[24].ToString());
+            }
+        }
+
+        private void btnBIEN26_Click(object sender, EventArgs e)
+        {
+            if (idbien[25] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[25].ToString(), valor[25].ToString(), PRECIO_BIEN[25].ToString());
+            }
+        }
+
+        private void btnBIEN27_Click(object sender, EventArgs e)
+        {
+            if (idbien[26] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[26].ToString(), valor[26].ToString(), PRECIO_BIEN[26].ToString());
+            }
+        }
+
+        private void btnBIEN28_Click(object sender, EventArgs e)
+        {
+            if (idbien[27] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[27].ToString(), valor[27].ToString(), PRECIO_BIEN[27].ToString());
+            }
+        }
+
+        private void btnBIEN29_Click(object sender, EventArgs e)
+        {
+            if (idbien[28] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[28].ToString(), valor[28].ToString(), PRECIO_BIEN[28].ToString());
+            }
+        }
+
+        private void btnBIEN30_Click(object sender, EventArgs e)
+        {
+            if (idbien[29] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[29].ToString(), valor[29].ToString(), PRECIO_BIEN[29].ToString());
+            }
+        }
+
+        private void btnBIEN31_Click(object sender, EventArgs e)
+        {
+            if (idbien[30] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[30].ToString(), valor[30].ToString(), PRECIO_BIEN[30].ToString());
+            }
+        }
+
+        private void btnBIEN32_Click(object sender, EventArgs e)
+        {
+            if (idbien[31] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[31].ToString(), valor[31].ToString(), PRECIO_BIEN[31].ToString());
+            }
+        }
+
+        private void btnBIEN33_Click(object sender, EventArgs e)
+        {
+            if (idbien[32] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[32].ToString(), valor[32].ToString(), PRECIO_BIEN[32].ToString());
+            }
+        }
+
+        private void btnBIEN34_Click(object sender, EventArgs e)
+        {
+            if (idbien[33] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[33].ToString(), valor[33].ToString(), PRECIO_BIEN[33].ToString());
+            }
+        }
+
+        private void btnBIEN35_Click(object sender, EventArgs e)
+        {
+            if (idbien[34] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[34].ToString(), valor[34].ToString(), PRECIO_BIEN[34].ToString());
+            }
+        }
+
+        private void btnBIEN36_Click(object sender, EventArgs e)
+        {
+            if (idbien[35] != null)
+            {
+                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[35].ToString(), valor[35].ToString(), PRECIO_BIEN[35].ToString());
+            }
         }
 
         private bool VALIDAR_DATOS()
