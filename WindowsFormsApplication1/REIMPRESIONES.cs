@@ -359,7 +359,7 @@ namespace WindowsFormsApplication1
                                             "CK.IMPORTE_CAJA, CK.ID_CAJA, CK.SALDO_INICIAL, CK.SALDO_FINAL, CK.EMPLEADO, CK.PV_DESCRIPCION, CK.S_DESCRIPCION, CK.FECHA_ANULADO, CK.DESCRIPCION,vt.C_DIRECCION" +
                                             " FROM V_CAJA_KADEX AS CK  INNER JOIN V_TABLA_VENTAS AS VT ON CK.ID_COMPVENT = VT.V_ID_VENTA " +
                                             "WHERE CK.ID_CAJA = '" + Properties.Settings.Default.id_caja + "' AND VT.V_TIPO_DOC LIKE  '%" + v_tipo_doc + "%' AND CK.ID_COMPVENT LIKE '%" + v_id_venta + "%' AND VT.V_NUMERO LIKE '%" + v_numero + "%'" +
-                                            " AND  AND VT.V_FECHA_ANULADO IS NULL ORDER BY CK.ID_COMPVENT DESC", con);
+                                            " AND VT.V_FECHA_ANULADO IS NULL ORDER BY CK.ID_COMPVENT DESC", con);
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(dt);

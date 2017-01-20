@@ -25,6 +25,10 @@ namespace WindowsFormsApplication1
             LLENAR_CLASE_BIEN();
             FILTRAR_BIEN();
             ACTUALIZAR_TOTALES();
+            txtFECHAINI.Value = Convert.ToDateTime(Properties.Settings.Default.fecha_apertura_caja);
+            txtFECHAINI.Enabled = false;
+            txtFECHAFINAL.Enabled = false;
+           
         }
 
         #region MyRegion
@@ -75,6 +79,22 @@ namespace WindowsFormsApplication1
                 cboCLASEBIEN.SelectedIndex = 0;
 
             }
+            else if ((Properties.Settings.Default.serie == "0010" && Properties.Settings.Default.id_sede == "003") || (Properties.Settings.Default.serie == "0005" && Properties.Settings.Default.id_sede == "003"))
+            { //AQUI VAN LOS BIENES DE LA SERIE DE BEBIDAS
+
+
+                List<ListaTipoProd> List = new List<ListaTipoProd>();
+
+                List.Add(new ListaTipoProd { texto = "TODOS", value = "TODOS" });
+                List.Add(new ListaTipoProd { texto = "BEBIDAS", value = "BEBIDAS" });
+                List.Add(new ListaTipoProd { texto = "BEBIDAS ALCOHOLICAS", value = "BEBIDAS ALCOHOLICAS" });
+                
+                cboCLASEBIEN.DataSource = List;
+                cboCLASEBIEN.DisplayMember = "texto";
+                cboCLASEBIEN.ValueMember = "value";
+                cboCLASEBIEN.SelectedIndex = 0;
+
+            }
             else
             {
                 List<ListaTipoProd> List = new List<ListaTipoProd>();
@@ -102,7 +122,7 @@ namespace WindowsFormsApplication1
 
             dgvLISTARBIENES.DataSource = OBJBIEN.REPORTE_BIENES_AGRUPADOS(SERIE, SEDE, FECHA_INI, FECHA_FIN, NOMBRE_CLASE);
             dgvLISTARBIENES.Columns[0].Width = 70;
-            dgvLISTARBIENES.Columns[1].Width = 110;
+            dgvLISTARBIENES.Columns[1].Width = 120;
             dgvLISTARBIENES.Columns[2].Width = 350;
             dgvLISTARBIENES.Columns[3].Width = 70;
             dgvLISTARBIENES.Columns[4].Width = 60;
@@ -141,7 +161,8 @@ namespace WindowsFormsApplication1
         {
             
             CAJA cj = new CAJA();
-            cj.Show();
+            cj.txtIDcaja.Text = Properties.Settings.Default.id_caja;
+            cj.Visible = true;
             this.Close();
         }
 
@@ -551,8 +572,9 @@ namespace WindowsFormsApplication1
             }
         }
 
-
-
-
+        private void btnIMPRIMIR_Click(object sender, EventArgs e)
+        {
+            IMPRIMIR_SPOOL();
+        }
     }
 }

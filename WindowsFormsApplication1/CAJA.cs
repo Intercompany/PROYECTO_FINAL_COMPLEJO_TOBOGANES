@@ -203,12 +203,12 @@ namespace WindowsFormsApplication1
 
         private void btnCERRARCAJA_Click_1(object sender, EventArgs e)
         {
-            txtFchaCierre.Text = DateTime.Now.ToString();
+            
             DialogResult result = MessageBox.Show("¿SEGURO QUE DESEA CERRAR CAJA??", "!!ATENCION!!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == DialogResult.OK)
             {
-
-            string ID_ADMIN = "";
+                txtFchaCierre.Text = DateTime.Now.ToString();
+                string ID_ADMIN = "";
             if (Properties.Settings.Default.id_empresa == "001")
             {
                 ID_ADMIN = "PV005";
@@ -466,9 +466,11 @@ namespace WindowsFormsApplication1
 
         private void button2_Click(object sender, EventArgs e)
         {////REPORTE BIENES
+            Properties.Settings.Default.fecha_apertura_caja = txtFchaApertura.Text;
+            this.Visible = false;
             REPORTE_BIENES RB = new REPORTE_BIENES();
             RB.ShowDialog();
-            this.Hide();
+            
         }
     }
 }

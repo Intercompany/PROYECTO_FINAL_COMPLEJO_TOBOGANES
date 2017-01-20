@@ -46,7 +46,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnSAlir = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLISTARBIENES)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnIMPRIMIR
@@ -66,6 +68,7 @@
             this.btnIMPRIMIR.Text = "IMPRIMIR";
             this.btnIMPRIMIR.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnIMPRIMIR.UseVisualStyleBackColor = false;
+            this.btnIMPRIMIR.Click += new System.EventHandler(this.btnIMPRIMIR_Click);
             // 
             // btnFILTRARBIEN
             // 
@@ -91,7 +94,7 @@
             // 
             this.cboCLASEBIEN.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboCLASEBIEN.FormattingEnabled = true;
-            this.cboCLASEBIEN.Location = new System.Drawing.Point(181, 185);
+            this.cboCLASEBIEN.Location = new System.Drawing.Point(181, 175);
             this.cboCLASEBIEN.Name = "cboCLASEBIEN";
             this.cboCLASEBIEN.Size = new System.Drawing.Size(223, 29);
             this.cboCLASEBIEN.TabIndex = 5;
@@ -102,7 +105,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(38, 188);
+            this.label4.Location = new System.Drawing.Point(38, 178);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 21);
             this.label4.TabIndex = 4;
@@ -111,7 +114,7 @@
             // txtFECHAFINAL
             // 
             this.txtFECHAFINAL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFECHAFINAL.Location = new System.Drawing.Point(181, 141);
+            this.txtFECHAFINAL.Location = new System.Drawing.Point(181, 131);
             this.txtFECHAFINAL.Name = "txtFECHAFINAL";
             this.txtFECHAFINAL.Size = new System.Drawing.Size(318, 29);
             this.txtFECHAFINAL.TabIndex = 3;
@@ -119,7 +122,7 @@
             // txtFECHAINI
             // 
             this.txtFECHAINI.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFECHAINI.Location = new System.Drawing.Point(181, 98);
+            this.txtFECHAINI.Location = new System.Drawing.Point(181, 88);
             this.txtFECHAINI.Name = "txtFECHAINI";
             this.txtFECHAINI.Size = new System.Drawing.Size(318, 29);
             this.txtFECHAINI.TabIndex = 2;
@@ -131,7 +134,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(38, 147);
+            this.label3.Location = new System.Drawing.Point(38, 137);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(117, 21);
             this.label3.TabIndex = 1;
@@ -143,7 +146,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(38, 104);
+            this.label2.Location = new System.Drawing.Point(38, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 21);
             this.label2.TabIndex = 0;
@@ -188,11 +191,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(105, 254);
+            this.label5.Location = new System.Drawing.Point(102, 240);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 24);
+            this.label5.Size = new System.Drawing.Size(119, 30);
             this.label5.TabIndex = 3;
             this.label5.Text = "RESUMEN: ";
             // 
@@ -200,11 +203,11 @@
             // 
             this.lblTOTCANTIDAD.AutoSize = true;
             this.lblTOTCANTIDAD.BackColor = System.Drawing.Color.Transparent;
-            this.lblTOTCANTIDAD.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTOTCANTIDAD.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTOTCANTIDAD.ForeColor = System.Drawing.Color.Yellow;
-            this.lblTOTCANTIDAD.Location = new System.Drawing.Point(225, 255);
+            this.lblTOTCANTIDAD.Location = new System.Drawing.Point(225, 241);
             this.lblTOTCANTIDAD.Name = "lblTOTCANTIDAD";
-            this.lblTOTCANTIDAD.Size = new System.Drawing.Size(105, 24);
+            this.lblTOTCANTIDAD.Size = new System.Drawing.Size(122, 30);
             this.lblTOTCANTIDAD.TabIndex = 4;
             this.lblTOTCANTIDAD.Text = "CANTIDAD";
             // 
@@ -212,11 +215,11 @@
             // 
             this.LBLTOTAL.AutoSize = true;
             this.LBLTOTAL.BackColor = System.Drawing.Color.Transparent;
-            this.LBLTOTAL.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLTOTAL.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLTOTAL.ForeColor = System.Drawing.Color.Yellow;
-            this.LBLTOTAL.Location = new System.Drawing.Point(347, 254);
+            this.LBLTOTAL.Location = new System.Drawing.Point(355, 240);
             this.LBLTOTAL.Name = "LBLTOTAL";
-            this.LBLTOTAL.Size = new System.Drawing.Size(80, 25);
+            this.LBLTOTAL.Size = new System.Drawing.Size(76, 30);
             this.LBLTOTAL.TabIndex = 5;
             this.LBLTOTAL.Text = "TOTAL";
             // 
@@ -224,11 +227,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(225, 236);
+            this.label8.Location = new System.Drawing.Point(3, -4);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 18);
+            this.label8.Size = new System.Drawing.Size(103, 25);
             this.label8.TabIndex = 6;
             this.label8.Text = "CANTIDAD";
             // 
@@ -236,11 +239,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(349, 236);
+            this.label9.Location = new System.Drawing.Point(133, -4);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 18);
+            this.label9.Size = new System.Drawing.Size(64, 25);
             this.label9.TabIndex = 7;
             this.label9.Text = "TOTAL";
             // 
@@ -264,6 +267,17 @@
             this.btnSAlir.UseVisualStyleBackColor = false;
             this.btnSAlir.Click += new System.EventHandler(this.btnSAlir_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Location = new System.Drawing.Point(221, 215);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(202, 23);
+            this.panel1.TabIndex = 9;
+            // 
             // REPORTE_BIENES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,15 +285,14 @@
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.abstract_background_red_1024x7681;
             this.ClientSize = new System.Drawing.Size(738, 683);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSAlir);
             this.Controls.Add(this.cboCLASEBIEN);
             this.Controls.Add(this.btnFILTRARBIEN);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnIMPRIMIR);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.LBLTOTAL);
             this.Controls.Add(this.lblTOTCANTIDAD);
             this.Controls.Add(this.txtFECHAFINAL);
@@ -294,6 +307,8 @@
             this.Text = "REPORTE_BIENES";
             this.Load += new System.EventHandler(this.REPORTE_BIENES_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLISTARBIENES)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,5 +331,6 @@
         public System.Windows.Forms.Label lblTOTCANTIDAD;
         public System.Windows.Forms.Label LBLTOTAL;
         public System.Windows.Forms.Button btnSAlir;
+        private System.Windows.Forms.Panel panel1;
     }
 }
