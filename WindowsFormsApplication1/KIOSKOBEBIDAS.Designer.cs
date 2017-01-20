@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label12 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -597,34 +597,34 @@
             this.dgvBIEN_VENTA.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.dgvBIEN_VENTA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvBIEN_VENTA.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.PaleTurquoise;
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBIEN_VENTA.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.PaleTurquoise;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBIEN_VENTA.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvBIEN_VENTA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvBIEN_VENTA.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvBIEN_VENTA.GridColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvBIEN_VENTA.Location = new System.Drawing.Point(504, 173);
             this.dgvBIEN_VENTA.MultiSelect = false;
             this.dgvBIEN_VENTA.Name = "dgvBIEN_VENTA";
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvBIEN_VENTA.RowHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvBIEN_VENTA.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvBIEN_VENTA.RowHeadersVisible = false;
             this.dgvBIEN_VENTA.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.AliceBlue;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.Black;
-            this.dgvBIEN_VENTA.RowsDefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.AliceBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            this.dgvBIEN_VENTA.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvBIEN_VENTA.Size = new System.Drawing.Size(643, 353);
             this.dgvBIEN_VENTA.TabIndex = 79;
             this.dgvBIEN_VENTA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBIEN_VENTA_CellContentClick);
@@ -1115,7 +1115,6 @@
             this.btnBIEN36.Size = new System.Drawing.Size(119, 97);
             this.btnBIEN36.TabIndex = 141;
             this.btnBIEN36.UseVisualStyleBackColor = false;
-            this.btnBIEN36.Click += new System.EventHandler(this.btnBIEN36_Click);
             // 
             // btnBIEN35
             // 
@@ -1135,7 +1134,6 @@
             this.btnBIEN35.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN35.TabIndex = 140;
             this.btnBIEN35.UseVisualStyleBackColor = false;
-            this.btnBIEN35.Click += new System.EventHandler(this.btnBIEN35_Click);
             // 
             // btnBIEN34
             // 
@@ -1155,7 +1153,6 @@
             this.btnBIEN34.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN34.TabIndex = 139;
             this.btnBIEN34.UseVisualStyleBackColor = false;
-            this.btnBIEN34.Click += new System.EventHandler(this.btnBIEN34_Click);
             // 
             // btnBIEN33
             // 
@@ -1175,7 +1172,6 @@
             this.btnBIEN33.Size = new System.Drawing.Size(118, 97);
             this.btnBIEN33.TabIndex = 138;
             this.btnBIEN33.UseVisualStyleBackColor = false;
-            this.btnBIEN33.Click += new System.EventHandler(this.btnBIEN33_Click);
             // 
             // btnBIEN32
             // 
@@ -1195,7 +1191,6 @@
             this.btnBIEN32.Size = new System.Drawing.Size(119, 97);
             this.btnBIEN32.TabIndex = 137;
             this.btnBIEN32.UseVisualStyleBackColor = false;
-            this.btnBIEN32.Click += new System.EventHandler(this.btnBIEN32_Click);
             // 
             // btnBIEN31
             // 
@@ -1215,7 +1210,6 @@
             this.btnBIEN31.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN31.TabIndex = 136;
             this.btnBIEN31.UseVisualStyleBackColor = false;
-            this.btnBIEN31.Click += new System.EventHandler(this.btnBIEN31_Click);
             // 
             // btnBIEN30
             // 
@@ -1235,7 +1229,6 @@
             this.btnBIEN30.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN30.TabIndex = 135;
             this.btnBIEN30.UseVisualStyleBackColor = false;
-            this.btnBIEN30.Click += new System.EventHandler(this.btnBIEN30_Click);
             // 
             // btnBIEN21
             // 
@@ -1255,7 +1248,6 @@
             this.btnBIEN21.Size = new System.Drawing.Size(118, 97);
             this.btnBIEN21.TabIndex = 126;
             this.btnBIEN21.UseVisualStyleBackColor = false;
-            this.btnBIEN21.Click += new System.EventHandler(this.btnBIEN21_Click);
             // 
             // btnBIEN29
             // 
@@ -1275,7 +1267,6 @@
             this.btnBIEN29.Size = new System.Drawing.Size(118, 97);
             this.btnBIEN29.TabIndex = 134;
             this.btnBIEN29.UseVisualStyleBackColor = false;
-            this.btnBIEN29.Click += new System.EventHandler(this.btnBIEN29_Click);
             // 
             // btnBIEN22
             // 
@@ -1295,7 +1286,6 @@
             this.btnBIEN22.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN22.TabIndex = 127;
             this.btnBIEN22.UseVisualStyleBackColor = false;
-            this.btnBIEN22.Click += new System.EventHandler(this.btnBIEN22_Click);
             // 
             // btnBIEN23
             // 
@@ -1315,7 +1305,6 @@
             this.btnBIEN23.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN23.TabIndex = 128;
             this.btnBIEN23.UseVisualStyleBackColor = false;
-            this.btnBIEN23.Click += new System.EventHandler(this.btnBIEN23_Click);
             // 
             // btnBIEN24
             // 
@@ -1335,7 +1324,6 @@
             this.btnBIEN24.Size = new System.Drawing.Size(119, 97);
             this.btnBIEN24.TabIndex = 129;
             this.btnBIEN24.UseVisualStyleBackColor = false;
-            this.btnBIEN24.Click += new System.EventHandler(this.btnBIEN24_Click);
             // 
             // btnBIEN25
             // 
@@ -1355,7 +1343,6 @@
             this.btnBIEN25.Size = new System.Drawing.Size(118, 97);
             this.btnBIEN25.TabIndex = 130;
             this.btnBIEN25.UseVisualStyleBackColor = false;
-            this.btnBIEN25.Click += new System.EventHandler(this.btnBIEN25_Click);
             // 
             // btnBIEN26
             // 
@@ -1375,7 +1362,6 @@
             this.btnBIEN26.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN26.TabIndex = 131;
             this.btnBIEN26.UseVisualStyleBackColor = false;
-            this.btnBIEN26.Click += new System.EventHandler(this.btnBIEN26_Click);
             // 
             // btnBIEN27
             // 
@@ -1395,7 +1381,6 @@
             this.btnBIEN27.Size = new System.Drawing.Size(117, 97);
             this.btnBIEN27.TabIndex = 132;
             this.btnBIEN27.UseVisualStyleBackColor = false;
-            this.btnBIEN27.Click += new System.EventHandler(this.btnBIEN27_Click);
             // 
             // btnBIEN28
             // 
@@ -1415,7 +1400,6 @@
             this.btnBIEN28.Size = new System.Drawing.Size(119, 97);
             this.btnBIEN28.TabIndex = 133;
             this.btnBIEN28.UseVisualStyleBackColor = false;
-            this.btnBIEN28.Click += new System.EventHandler(this.btnBIEN28_Click);
             // 
             // txtCliente
             // 
