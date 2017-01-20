@@ -182,7 +182,8 @@ namespace WindowsFormsApplication1
 
 
             //AQUI CAPTURO LA LISTA DE BIENES POR FECHA
-            VENTA_REPORTE = OBJBIEN.REPORTE_BIENES_AGRUPADOS(SERIE, SEDE, txtFECHAINI.Value.ToString(), txtFECHAFINAL.Value.ToString(), cboCLASEBIEN.SelectedValue.ToString());
+            VENTA_REPORTE = OBJBIEN.REPORTE_BIENES_AGRUPADOS(SERIE, SEDE, Convert.ToDateTime(txtFECHAINI.Value.ToString()).ToShortDateString(),
+                Convert.ToDateTime(txtFECHAFINAL.Value.ToString()).ToShortDateString(), cboCLASEBIEN.SelectedValue.ToString());
 
             CreaTicket Ticket1 = new CreaTicket();
             Ticket1.impresora = "BIXOLON SRP-270";
