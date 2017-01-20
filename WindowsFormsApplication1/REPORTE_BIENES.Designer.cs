@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(REPORTE_BIENES));
             this.btnIMPRIMIR = new System.Windows.Forms.Button();
             this.btnFILTRARBIEN = new System.Windows.Forms.Button();
@@ -61,7 +62,7 @@
             this.btnIMPRIMIR.ForeColor = System.Drawing.Color.White;
             this.btnIMPRIMIR.Image = global::WindowsFormsApplication1.Properties.Resources.impresora__1_;
             this.btnIMPRIMIR.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIMPRIMIR.Location = new System.Drawing.Point(541, 147);
+            this.btnIMPRIMIR.Location = new System.Drawing.Point(551, 147);
             this.btnIMPRIMIR.Name = "btnIMPRIMIR";
             this.btnIMPRIMIR.Size = new System.Drawing.Size(150, 43);
             this.btnIMPRIMIR.TabIndex = 7;
@@ -81,7 +82,7 @@
             this.btnFILTRARBIEN.ForeColor = System.Drawing.Color.White;
             this.btnFILTRARBIEN.Image = global::WindowsFormsApplication1.Properties.Resources.buscando3;
             this.btnFILTRARBIEN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFILTRARBIEN.Location = new System.Drawing.Point(541, 208);
+            this.btnFILTRARBIEN.Location = new System.Drawing.Point(551, 208);
             this.btnFILTRARBIEN.Name = "btnFILTRARBIEN";
             this.btnFILTRARBIEN.Size = new System.Drawing.Size(150, 44);
             this.btnFILTRARBIEN.TabIndex = 6;
@@ -181,11 +182,22 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvLISTARBIENES.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvLISTARBIENES.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Honeydew;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLISTARBIENES.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvLISTARBIENES.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvLISTARBIENES.GridColor = System.Drawing.Color.SpringGreen;
             this.dgvLISTARBIENES.Location = new System.Drawing.Point(12, 281);
             this.dgvLISTARBIENES.Name = "dgvLISTARBIENES";
             this.dgvLISTARBIENES.ReadOnly = true;
             this.dgvLISTARBIENES.RowHeadersVisible = false;
-            this.dgvLISTARBIENES.Size = new System.Drawing.Size(711, 395);
+            this.dgvLISTARBIENES.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLISTARBIENES.Size = new System.Drawing.Size(699, 395);
             this.dgvLISTARBIENES.TabIndex = 2;
             // 
             // label5
@@ -259,7 +271,7 @@
             this.btnSAlir.ForeColor = System.Drawing.Color.White;
             this.btnSAlir.Image = global::WindowsFormsApplication1.Properties.Resources.salida;
             this.btnSAlir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSAlir.Location = new System.Drawing.Point(541, 81);
+            this.btnSAlir.Location = new System.Drawing.Point(551, 81);
             this.btnSAlir.Name = "btnSAlir";
             this.btnSAlir.Size = new System.Drawing.Size(150, 44);
             this.btnSAlir.TabIndex = 8;
@@ -285,7 +297,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.abstract_background_red_1024x7681;
-            this.ClientSize = new System.Drawing.Size(738, 683);
+            this.ClientSize = new System.Drawing.Size(724, 683);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSAlir);
             this.Controls.Add(this.cboCLASEBIEN);
