@@ -1427,6 +1427,7 @@ namespace CAPA_DATOS
             da.Fill(dt);
             return dt;
         }
+
         public DataTable ANULAR_PROVEEDOR(string ID_PROVEEDOR)
         {
             SqlCommand cmd = new SqlCommand();

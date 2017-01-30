@@ -148,11 +148,11 @@
   <data name="movimiento-de-la-mano" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\movimiento-de-la-mano.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="portapapeles (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\portapapeles (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="impresora (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\impresora (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo-form2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo-form2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu-en-boton-de-expansion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-en-boton-de-expansion1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,20 +175,20 @@
   <data name="expandir-boton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\expandir-boton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lupa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="6151" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6151.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clasificacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clasificacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu-en-boton-de-expansion (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu-en-boton-de-expansion (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fondo-form1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo-form1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agrandar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\agrandar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lupa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lupa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="portapapeles (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\portapapeles (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="large-background-1024x724" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\large-background-1024x7241.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,11 +199,26 @@
   <data name="b_1309256029901" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\b_1309256029901.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fondos-abstractos-tecnologia-wallpaper-gratis-5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondos-abstractos-tecnologia-wallpaper-gratis-5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok-appproval-aceptacion1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok-appproval-aceptacion1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu-en-boton-de-expansion (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu-en-boton-de-expansion (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="textura-de-gradiente-de-acuarela-en-tonos-azules_23-2147508391" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\textura-de-gradiente-de-acuarela-en-tonos-azules_23-21475083911.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="buscando2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buscando2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo-form" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fondo-form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="boton-ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\boton-ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="salida" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salida.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,19 +226,28 @@
   <data name="2545" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2545.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="portapapeles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\portapapeles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="degradados_azules_1920x1200_127-1024x640 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\degradados_azules_1920x1200_127-1024x640 (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="flecha-ampliar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flecha-ampliar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="agrandar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agrandar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ok-appproval-aceptacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ok-appproval-aceptacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="74370-OEB5DU-339" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\74370-OEB5DU-339.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="portapapeles" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\portapapeles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wifi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wifi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

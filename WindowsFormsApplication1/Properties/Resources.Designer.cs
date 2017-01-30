@@ -153,6 +153,16 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap boton_ok {
+            get {
+                object obj = ResourceManager.GetObject("boton-ok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap buscando {
             get {
                 object obj = ResourceManager.GetObject("buscando", resourceCulture);
@@ -256,6 +266,46 @@ namespace WindowsFormsApplication1.Properties {
         public static System.Drawing.Bitmap flecha_ampliar {
             get {
                 object obj = ResourceManager.GetObject("flecha-ampliar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo_form {
+            get {
+                object obj = ResourceManager.GetObject("fondo-form", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo_form1 {
+            get {
+                object obj = ResourceManager.GetObject("fondo-form1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondo_form2 {
+            get {
+                object obj = ResourceManager.GetObject("fondo-form2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap fondos_abstractos_tecnologia_wallpaper_gratis_5 {
+            get {
+                object obj = ResourceManager.GetObject("fondos-abstractos-tecnologia-wallpaper-gratis-5", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -373,6 +423,26 @@ namespace WindowsFormsApplication1.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap ok_appproval_aceptacion {
+            get {
+                object obj = ResourceManager.GetObject("ok-appproval-aceptacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ok_appproval_aceptacion1 {
+            get {
+                object obj = ResourceManager.GetObject("ok-appproval-aceptacion1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap portapapeles {
             get {
                 object obj = ResourceManager.GetObject("portapapeles", resourceCulture);
@@ -416,6 +486,16 @@ namespace WindowsFormsApplication1.Properties {
         public static System.Drawing.Bitmap textura_de_gradiente_de_acuarela_en_tonos_azules_23_2147508391 {
             get {
                 object obj = ResourceManager.GetObject("textura-de-gradiente-de-acuarela-en-tonos-azules_23-2147508391", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap wifi {
+            get {
+                object obj = ResourceManager.GetObject("wifi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

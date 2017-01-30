@@ -14,6 +14,7 @@ using System.Collections;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Globalization;
+using System.Net.NetworkInformation;
 
 namespace WindowsFormsApplication1
 {
@@ -93,7 +94,7 @@ namespace WindowsFormsApplication1
             dgvBIEN_VENTA.Visible = false;
             LLENAR_GRILLA();
             // DataTable vPdt_detBien = (DataTable)detalle;
-
+            timer1.Start();
             /*----------*/
             //crea boton Eliminar en el gridview
             DataGridViewButtonColumn colBotonEliminar = new DataGridViewButtonColumn();
@@ -1865,6 +1866,11 @@ namespace WindowsFormsApplication1
             {
                 e.Handled = true;
             }
+            if (txtPAGA.Text != "") {
+                if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                {
+                    button3.PerformClick();
+                } }
         }
 
         private void cboCLASE_BIEN_SelectedIndexChanged(object sender, EventArgs e)
@@ -2012,6 +2018,11 @@ namespace WindowsFormsApplication1
             }
         }
 
+        private void txtPAGA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         public void ShowMyDialogBox()
         {
             POPUPCliente testDialog = new POPUPCliente();
@@ -2045,6 +2056,61 @@ namespace WindowsFormsApplication1
 
         }
         /*-------------------popup-message---------------------*/
+
+        /*AQUI EMPIEZA LA PRUBA DE INTERNET*/
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Interval = 2000;
+            timer1.Stop(); //detener mientras se hace la consulta
+
+            AccesoInternet();
+            if (AccesoInternet() == false)
+            {
+                DialogoInternet();
+            }
+
+            timer1.Start();  // iniciar nuevamente el timer.
+        }
+
+
+
+        private bool AccesoInternet()
+        {
+
+
+            //Ping Pings = new Ping();
+            //int timeout = 1000;
+
+            //if (Pings.Send("200.48.225.130", timeout).Status == IPStatus.Success)
+            //{
+
+            //    return true;
+            //}
+            //else
+            //{
+            //    return false;
+            //}
+
+            try
+            {
+                System.Net.IPHostEntry host = System.Net.Dns.GetHostEntry("www.google.com");
+                return true;
+
+            }
+            catch (Exception es)
+            {
+
+                return false;
+            }
+
+
+        }
+
+        public void DialogoInternet()
+        {
+            TestInternet test = new TestInternet();
+            test.ShowDialog();
+        }
 
 
     }

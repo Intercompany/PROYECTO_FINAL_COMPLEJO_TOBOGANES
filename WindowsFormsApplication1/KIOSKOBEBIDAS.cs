@@ -81,8 +81,24 @@ namespace WindowsFormsApplication1
             lblSede.Text = Properties.Settings.Default.nomsede;
             lblFecha.Text = DateTime.Today.ToShortDateString();
             // txtCLIENTE_ID.Enabled = false;
-            
-            
+
+            Properties.Settings.Default.cantidad_grilla = "";
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+
+            Properties.Settings.Default.precio_prod_grilla = "";
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+
+            Properties.Settings.Default.id_prod_grilla = "";
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+
+            Properties.Settings.Default.nom_prod_grilla = "";
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+
+
             LLENAR_CLASE_BIEN();
             LLENAR_MENU_BIENES();
             TIPO_PAGO();
@@ -267,23 +283,26 @@ namespace WindowsFormsApplication1
 
         }
 
-        void OBTENER_ID_BIEN_Y_LLENAR_GRILLA(string ID_BIEN, string DESCRIPCION, string PRECIO)
+        public void OBTENER_ID_BIEN_Y_LLENAR_GRILLA(string ID_BIEN, string DESCRIPCION, string PRECIO)
         {
             if (dgvBIEN_VENTA.Visible == false) { dgvBIEN_VENTA.Visible = true; }
             DataTable dt = vPdt_detBien;
             try
             {
+                string precio_adsasd = Properties.Settings.Default.precio_prod_grilla;
+                string cantidad_asdasd = Properties.Settings.Default.cantidad_grilla;
+                string valor_asda = Properties.Settings.Default.nom_prod_grilla;
                 DataRow row = dt.NewRow();
-                row["ID_BIEN"] = ID_BIEN;
-                row["CANT"] = Convert.ToDouble(txtCANTIDAD_VENTA.Text); //
-                row["DESCRIPCION"] = DESCRIPCION;
+                row["ID_BIEN"] = Properties.Settings.Default.id_prod_grilla; ;
+                row["CANT"] = Convert.ToDouble(Properties.Settings.Default.cantidad_grilla);
+                row["DESCRIPCION"] = Properties.Settings.Default.nom_prod_grilla;
                 if (txtPRECIO_VENTA.Text != string.Empty) // si es vacio tomo el precio del texbox precioventa
                 {
-                    row["PRECIO"] = Convert.ToDouble(txtPRECIO_VENTA.Text);
+                    row["PRECIO"] = Convert.ToDouble(Properties.Settings.Default.precio_prod_grilla);
                 }
                 else //sino tomo el precio de la base de datos q esta en el parametro PRECIO
                 {
-                    row["PRECIO"] = Convert.ToDouble(PRECIO);
+                    row["PRECIO"] = Convert.ToDouble(Properties.Settings.Default.precio_prod_grilla);
                 }
 
                 row["IMPORTE"] = Convert.ToDouble(row["PRECIO"]) * Convert.ToDouble(row["CANT"]);
@@ -297,7 +316,7 @@ namespace WindowsFormsApplication1
                 txtCANTIDAD_VENTA.Text = "1";
                 txtPRECIO_VENTA.Text = string.Empty;
 
-                txtCANTIDAD_VENTA.Focus();
+                button3.Focus();
             }
             catch (Exception)
             {
@@ -539,15 +558,7 @@ namespace WindowsFormsApplication1
                 E_OBJMANT_VENTADET.ID_SEDE = Properties.Settings.Default.id_sede;
                 E_OBJMANT_VENTADET.ID_PEDIDO = null;
                 E_OBJMANT_VENTADET.ID_CLIENTE = POP_id_cliente;
-                if (Convert.ToDouble(lblTOTAL.Text) < 700)
-                {
-                    E_OBJMANT_VENTADET.CLIENTE = txtCliente.Text;
-                }
-                else
-                {
-                    E_OBJMANT_VENTADET.CLIENTE = POP_descripcion;
-                }
-               
+                E_OBJMANT_VENTADET.CLIENTE = POP_descripcion;
                 E_OBJMANT_VENTADET.ACCION = "1";
 
                 res = N_OBJVENTAS.MANTENIMIENTO_VENTA(E_OBJMANT_VENTADET); //AQUI CARGO LA VENTA
@@ -790,18 +801,18 @@ namespace WindowsFormsApplication1
             if (dgvBIEN_VENTA.Rows.Count > 0)
             {
                 
-                    if (txtPAGA.Text.ToString() != string.Empty)
+                    if (lblTOTAL.Text.ToString() != string.Empty)
                     {
-                        if (Convert.ToDouble(txtPAGA.Text) >= Convert.ToDouble(lblTOTAL.Text))
+                        if (Convert.ToDouble(lblTOTAL.Text) >= Convert.ToDouble(lblTOTAL.Text))
                         {
                             double TOTAL = Convert.ToDouble(lblTOTAL.Text);
-                            PAGA = Convert.ToDouble(txtPAGA.Text);
+                            PAGA = Convert.ToDouble(lblTOTAL.Text);
                             VUELTO = Convert.ToDouble(Convert.ToDouble(PAGA - TOTAL).ToString("N2"));
-                            if (Convert.ToDouble(txtPAGA.Text) >= 700)
+                            if (Convert.ToDouble(lblTOTAL.Text) >= 700)
                             {
                                 ShowMyDialogBox();
                             }
-                            else if (Convert.ToDouble(txtPAGA.Text)<700)
+                            else if (Convert.ToDouble(lblTOTAL.Text)<700)
                             {
                             DialogResult result = MessageBox.Show("¿QUIERE REALIZAR LA VENTA?", "!!ATENCION!!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                             if (result == DialogResult.OK)
@@ -1359,101 +1370,239 @@ namespace WindowsFormsApplication1
 
         #endregion
 
+        /*-------------------popup-message---------------------*/
+        public void MostrarPOPUP_Cantidad()
+        {
+            CANTIDAD_PROD CProd = new CANTIDAD_PROD();
+            
+            
+            // Show testDialog as a modal dialog and determine if DialogResult = OK.
+            if (CProd.ShowDialog(this) == DialogResult.OK)
+            {
+                if (Convert.ToUInt32(CProd.textBox1.Text) >= 1 )
+                {
+                    
+
+                    OBTENER_ID_BIEN_Y_LLENAR_GRILLA(Properties.Settings.Default.id_prod_grilla, Properties.Settings.Default.nom_prod_grilla, Properties.Settings.Default.precio_prod_grilla);
+
+                }
+                else if (CProd.textBox1.Text == "")
+                {
+                    CProd.lblmensaje.Visible = true;
+                }
+
+            }
+
+        }
+        /*-------------------popup-message---------------------*/
+
+
+
+
+
+
         private void btnBIEN01_Click(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[0].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN01.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[0];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[0] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[0].ToString(), valor[0].ToString(), PRECIO_BIEN[0].ToString());
-
+                MostrarPOPUP_Cantidad();
             }
         }
 
         private void btnBIEN02_Click_1(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[1].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN02.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[1];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[1] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[1].ToString(), valor[1].ToString(), PRECIO_BIEN[1].ToString());
+                MostrarPOPUP_Cantidad();
 
             }
         }
 
         private void btnBIEN03_Click_1(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[2].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN03.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[2];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[2] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[2].ToString(), valor[2].ToString(), PRECIO_BIEN[2].ToString());
+                MostrarPOPUP_Cantidad();
             }
         }
 
         private void btnBIEN04_Click_1(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[3].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN04.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[3];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[3] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[3].ToString(), valor[3].ToString(), PRECIO_BIEN[3].ToString());
+                MostrarPOPUP_Cantidad();
             }
         }
 
         private void btnBIEN05_Click_1(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[4].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN05.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[4];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[4] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[4].ToString(), valor[4].ToString(), PRECIO_BIEN[4].ToString());
+                MostrarPOPUP_Cantidad();
             }
         }
 
         private void btnBIEN06_Click_1(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[5].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN06.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[5];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[5] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[5].ToString(), valor[5].ToString(), PRECIO_BIEN[5].ToString());
+                MostrarPOPUP_Cantidad();
             }
         }
 
         private void btnBIEN07_Click_1(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[6].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN07.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[6];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[6] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[6].ToString(), valor[6].ToString(), PRECIO_BIEN[6].ToString());
+                MostrarPOPUP_Cantidad();
             }
         }
 
         private void btnBIEN08_Click_1(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[7].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN08.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[7];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[7] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[7].ToString(), valor[7].ToString(), PRECIO_BIEN[7].ToString());
+                MostrarPOPUP_Cantidad();
             }
         }
 
         private void btnBIEN09_Click_1(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[8].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN09.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[8];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[8] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[8].ToString(), valor[8].ToString(), PRECIO_BIEN[8].ToString());
+                MostrarPOPUP_Cantidad();
             }
         }
 
         private void btnBIEN10_Click_1(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[9].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN10.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[9];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[9] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[9].ToString(), valor[9].ToString(), PRECIO_BIEN[9].ToString());
+                MostrarPOPUP_Cantidad();
             }
         }
 
         private void btnBIEN11_Click_1(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[10].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN11.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[10];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[10] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[10].ToString(), valor[10].ToString(), PRECIO_BIEN[10].ToString());
+                MostrarPOPUP_Cantidad();
             }
         }
 
         private void btnBIEN12_Click_1(object sender, EventArgs e)
         {
+            Properties.Settings.Default.precio_prod_grilla = PRECIO_BIEN[11].ToString();
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.nom_prod_grilla = btnBIEN12.Text;
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
+            Properties.Settings.Default.id_prod_grilla = idbien[11];
+            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Upgrade();
             if (idbien[11] != null)
             {
-                OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[11].ToString(), valor[11].ToString(), PRECIO_BIEN[11].ToString());
+                MostrarPOPUP_Cantidad();
             }
         }
 
@@ -1565,6 +1714,7 @@ namespace WindowsFormsApplication1
             {
                 e.Handled = true;
             }
+
         }
 
         private void txtPAGA_KeyPress(object sender, KeyPressEventArgs e)
@@ -1750,6 +1900,11 @@ namespace WindowsFormsApplication1
             {
                 OBTENER_ID_BIEN_Y_LLENAR_GRILLA(idbien[35].ToString(), valor[35].ToString(), PRECIO_BIEN[35].ToString());
             }
+        }
+
+        private void txtPAGA_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private bool VALIDAR_DATOS()

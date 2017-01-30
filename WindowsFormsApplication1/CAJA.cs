@@ -203,90 +203,96 @@ namespace WindowsFormsApplication1
 
         private void btnCERRARCAJA_Click_1(object sender, EventArgs e)
         {
-            
-            DialogResult result = MessageBox.Show("¿SEGURO QUE DESEA CERRAR CAJA??", "!!ATENCION!!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (result == DialogResult.OK)
+            DialogResult resultado = MessageBox.Show("¿YA IMPRIMIO SU REPORTE DE CAJA??", "!!ATENCION!!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes)
             {
-                txtFchaCierre.Text = DateTime.Now.ToString();
-                string ID_ADMIN = "";
-            if (Properties.Settings.Default.id_empresa == "001")
-            {
-                ID_ADMIN = "PV005";
-            }
-            else
-            {
-                if (Properties.Settings.Default.id_empresa == "003")
+
+                DialogResult result = MessageBox.Show("¿SEGURO QUE DESEA CERRAR CAJA??", "!!ATENCION!!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (result == DialogResult.OK)
                 {
-                    ID_ADMIN = "PV010";
-                }
-                else
-                {
-                    if (Properties.Settings.Default.id_empresa == "004")
+                    txtFchaCierre.Text = DateTime.Now.ToString();
+                    string ID_ADMIN = "";
+                    if (Properties.Settings.Default.id_empresa == "001")
                     {
-                        ID_ADMIN = "PV011";
+                        ID_ADMIN = "PV005";
+                    }
+                    else
+                    {
+                        if (Properties.Settings.Default.id_empresa == "003")
+                        {
+                            ID_ADMIN = "PV010";
+                        }
+                        else
+                        {
+                            if (Properties.Settings.Default.id_empresa == "004")
+                            {
+                                ID_ADMIN = "PV011";
+                            }
+                        }
+
+                    }
+                    DataTable dt = OBJ_N_MANTCAJA.VALIDAR_EXISTENCIA_CAJAADMINISTRACION(ID_ADMIN);
+
+                    if (dt.Rows.Count > 0)
+                    {
+                        if (txtFchaApertura.Text.ToString() != string.Empty && txtFchaCierre.Text.ToString() != string.Empty &&
+                            txtIDcaja.Text.ToString() != string.Empty && txtSaldoInicial.Text.ToString() != string.Empty && txtSaldoFinal.Text.ToString() != string.Empty)
+                        {
+                            OBJ_E_MANTCAJA.ID_CAJA = txtIDcaja.Text.ToString();
+                            OBJ_E_MANTCAJA.SALDO_INICIAL = Convert.ToDouble(txtSaldoInicial.Text.ToString());
+                            OBJ_E_MANTCAJA.OBSERVACION = txtObs.Text.ToString();
+                            OBJ_E_MANTCAJA.ID_EMPLEADO = Properties.Settings.Default.id_empleado;
+                            OBJ_E_MANTCAJA.ID_PUNTOVENTA = Properties.Settings.Default.punto_venta;
+                            OBJ_E_MANTCAJA.OPCION = 2;
+
+
+                            //AQUI TENEMOS EL CODIGO PARA PASAR LA INFORMACION DE CADA CAJA A LA CAJA ADMINISTRACION
+                            //=====================================================================================
+                            NumberFormatInfo provider = new NumberFormatInfo();
+                            provider.NumberDecimalSeparator = ".";
+                            provider.NumberGroupSeparator = ",";
+                            provider.NumberGroupSizes = new int[] { 2 };
+
+                            OBJ_N_MANTCAJA.MOVIMIENTOS_XDIA_CAJAS(Properties.Settings.Default.nomempleado, txtIDcaja.Text.ToString(), Convert.ToDouble(Properties.Settings.Default.tipo_cambio), "1", (-1) * Convert.ToDouble(txtSaldoFinal.Text.ToString(), provider), Properties.Settings.Default.id_sede);
+                            OBJ_N_MANTCAJA.MOVIMIENTOS_XDIA_CAJAS(Properties.Settings.Default.nomempleado, txtIDcaja.Text.ToString(), Convert.ToDouble(Properties.Settings.Default.tipo_cambio), "2", (Convert.ToDouble(txtSaldoFinal.Text.ToString(), provider)), Properties.Settings.Default.id_sede);
+
+                            // ====================================================================================
+
+                            OBJ_N_MANTCAJA.MANTENIMIENTO_CAJA(OBJ_E_MANTCAJA);
+                            id_caja = string.Empty;
+                            string id = id_caja;
+                            HABILITAR_CONTROLES(2); // CON ESTA OPCION SE PONE EN ESTADO DE CONSULTA DE CAJA
+                            if (this.Width >= 1100)
+                            {
+                                btnEXPANDIR.Location = new Point(1190, 226);
+                                this.Width = 1079;
+                                btnEXPANDIR.Text = "EXP AND I R";
+                            }
+                            lblMENSAJES.Text = string.Empty;
+                            this.Close();
+                            LOGIN OBJLOG = new LOGIN();
+                            OBJLOG.Show();
+
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("NO PUEDE CERRAR CAJA, PORQUE NO HAY UNA CAJA ADMINISTRACION ABIERTA");
                     }
                 }
-
-            }
-            DataTable dt = OBJ_N_MANTCAJA.VALIDAR_EXISTENCIA_CAJAADMINISTRACION(ID_ADMIN);
-
-            if (dt.Rows.Count > 0)
-            {
-                if (txtFchaApertura.Text.ToString() != string.Empty && txtFchaCierre.Text.ToString() != string.Empty &&
-                    txtIDcaja.Text.ToString() != string.Empty && txtSaldoInicial.Text.ToString() != string.Empty && txtSaldoFinal.Text.ToString() != string.Empty)
+                else if (result == DialogResult.Cancel)
                 {
-                    OBJ_E_MANTCAJA.ID_CAJA = txtIDcaja.Text.ToString();
-                    OBJ_E_MANTCAJA.SALDO_INICIAL = Convert.ToDouble(txtSaldoInicial.Text.ToString());
-                    OBJ_E_MANTCAJA.OBSERVACION = txtObs.Text.ToString();
-                    OBJ_E_MANTCAJA.ID_EMPLEADO = Properties.Settings.Default.id_empleado;
-                    OBJ_E_MANTCAJA.ID_PUNTOVENTA = Properties.Settings.Default.punto_venta;
-                    OBJ_E_MANTCAJA.OPCION = 2;
 
-
-                    //AQUI TENEMOS EL CODIGO PARA PASAR LA INFORMACION DE CADA CAJA A LA CAJA ADMINISTRACION
-                    //=====================================================================================
-                    NumberFormatInfo provider = new NumberFormatInfo();
-                    provider.NumberDecimalSeparator = ".";
-                    provider.NumberGroupSeparator = ",";
-                    provider.NumberGroupSizes = new int[] { 2 };
-
-                    OBJ_N_MANTCAJA.MOVIMIENTOS_XDIA_CAJAS(nombre_empleado, txtIDcaja.Text.ToString(), Convert.ToDouble(tipo_cambio), "1", (-1) * Convert.ToDouble(txtSaldoFinal.Text.ToString(), provider), sede);
-                    OBJ_N_MANTCAJA.MOVIMIENTOS_XDIA_CAJAS(nombre_empleado, txtIDcaja.Text.ToString(), Convert.ToDouble(tipo_cambio), "2", (Convert.ToDouble(txtSaldoFinal.Text.ToString(), provider)), sede);
-
-                    // ====================================================================================
-
-                    OBJ_N_MANTCAJA.MANTENIMIENTO_CAJA(OBJ_E_MANTCAJA);
-                    id_caja = string.Empty;
-                    string id = id_caja;
-                    HABILITAR_CONTROLES(2); // CON ESTA OPCION SE PONE EN ESTADO DE CONSULTA DE CAJA
-                    if (this.Width >= 1100)
-                    {
-                        btnEXPANDIR.Location = new Point(1190, 226);
-                        this.Width = 1079;
-                        btnEXPANDIR.Text = "EXP AND I R";
-                    }
-                    lblMENSAJES.Text = string.Empty;
-                    this.Close();
-                        LOGIN OBJLOG = new LOGIN();
-                        OBJLOG.Show();
 
                 }
             }
-            else
+            else if (resultado == DialogResult.Cancel)
             {
-                MessageBox.Show("NO PUEDE CERRAR CAJA, PORQUE NO HAY UNA CAJA ADMINISTRACION ABIERTA");
+
+
             }
             }
-            else if (result == DialogResult.Cancel)
-            {
-               
-
-            }
-        }
-
-
-
-
+        
         private void btnVentaRapida_Click(object sender, EventArgs e)
         {
             

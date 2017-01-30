@@ -190,5 +190,53 @@ namespace WindowsFormsApplication1.Properties {
                 this["nom_p_venta"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string cantidad_grilla {
+            get {
+                return ((string)(this["cantidad_grilla"]));
+            }
+            set {
+                this["cantidad_grilla"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string nom_prod_grilla {
+            get {
+                return ((string)(this["nom_prod_grilla"]));
+            }
+            set {
+                this["nom_prod_grilla"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string precio_prod_grilla {
+            get {
+                return ((string)(this["precio_prod_grilla"]));
+            }
+            set {
+                this["precio_prod_grilla"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string id_prod_grilla {
+            get {
+                return ((string)(this["id_prod_grilla"]));
+            }
+            set {
+                this["id_prod_grilla"] = value;
+            }
+        }
     }
 }

@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CANTIDAD_PROD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CANTIDAD_PROD.Designer.cs">
+      <DependentUpon>CANTIDAD_PROD.cs</DependentUpon>
+    </Compile>
     <Compile Include="KIOSKOBEBIDAS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,15 @@
       <DependentUpon>REPORTE_BIENES.cs</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
+    <Compile Include="TestInternet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestInternet.Designer.cs">
+      <DependentUpon>TestInternet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CANTIDAD_PROD.resx">
+      <DependentUpon>CANTIDAD_PROD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="REPORTE_BIENES.resx">
       <DependentUpon>REPORTE_BIENES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestInternet.resx">
+      <DependentUpon>TestInternet.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -242,6 +260,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\wifi.png" />
     <None Include="Resources\2545.jpg" />
     <Content Include="Resources\43822hd.jpg" />
     <None Include="Resources\43822hd1.jpg" />
@@ -254,9 +273,14 @@
     <None Include="Resources\buscando2.png" />
     <None Include="Resources\buscando.ico" />
     <None Include="Resources\abstract_background_red-1024x7682.jpg" />
+    <None Include="Resources\boton-ok.png" />
+    <None Include="Resources\fondo-form.png" />
+    <None Include="Resources\fondo-form1.png" />
+    <None Include="Resources\fondo-form2.png" />
     <Content Include="Resources\fondo-tricolor-con-degradado_1095-64.jpg" />
     <None Include="Resources\fondo-tricolor-con-degradado_1095-641.jpg" />
     <None Include="Resources\impresora %281%29.ico" />
+    <None Include="Resources\fondos-abstractos-tecnologia-wallpaper-gratis-5.jpg" />
     <Content Include="Resources\large-background-1024x724.jpg" />
     <None Include="Resources\large-background-1024x7241.jpg" />
     <Content Include="Resources\nuevo-usuario.png" />
@@ -265,6 +289,8 @@
     <None Include="Resources\salida.ico" />
     <None Include="Resources\portapapeles %281%29.ico" />
     <None Include="Resources\portapapeles.png" />
+    <None Include="Resources\ok-appproval-aceptacion.png" />
+    <None Include="Resources\ok-appproval-aceptacion1.png" />
     <Content Include="Resources\textura-de-gradiente-de-acuarela-en-tonos-azules_23-2147508391.jpg" />
     <None Include="Resources\textura-de-gradiente-de-acuarela-en-tonos-azules_23-21475083911.jpg" />
     <None Include="Resources\flecha-ampliar.png" />
