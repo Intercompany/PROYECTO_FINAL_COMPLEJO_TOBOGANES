@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
             timer1.Start();
             registrar_evento();
         }
-        
+        Correo c = new Correo();
         void registrar_evento()
         {
 
@@ -89,14 +89,16 @@ namespace WindowsFormsApplication1
 
 
 
-            timer1.Interval = 500;
+            timer1.Interval = 2000;
             timer1.Stop(); // detener mientras se hace la consulta
 
 
             AccesoInternet();
             if (AccesoInternet() == true)
             {
+                
                 registrar_evento_reconectado();
+                button1.PerformClick();    
                 this.Close();
             }
             else
@@ -107,6 +109,12 @@ namespace WindowsFormsApplication1
 
 
             timer1.Start();  // iniciar nuevamente el timer.
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            c.enviarCorreo("desarrolloti2@grupodionys.com.pe", "Camila123", "REPORTE DE PRUEBA", "PRUEBA ENVIO ARCHIVO CONEXION", "cremolada.peru@gmail.com", @"c:\temp\MONITOREO.txt");
+            
         }
     }
 }

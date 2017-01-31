@@ -134,7 +134,7 @@ namespace WindowsFormsApplication1
         E_MANT_CLIENTE E_OBJMANT_CLIENTE = new E_MANT_CLIENTE();
         E_VENTA_Y_DETALLE E_OBJMANT_VENTADET = new E_VENTA_Y_DETALLE();
         E_CAJA_KARDEX E_OBJCAJA_KARDEX = new E_CAJA_KARDEX();
-
+        Correo c = new Correo();
 
         #endregion
 

@@ -71,6 +71,7 @@
     <Compile Include="CANTIDAD_PROD.Designer.cs">
       <DependentUpon>CANTIDAD_PROD.cs</DependentUpon>
     </Compile>
+    <Compile Include="Correo.cs" />
     <Compile Include="KIOSKOBEBIDAS.cs">
       <SubType>Form</SubType>
     </Compile>
