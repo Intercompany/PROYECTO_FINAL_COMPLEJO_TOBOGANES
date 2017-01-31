@@ -34,6 +34,7 @@
             this.lblMensaje = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(232, 13);
+            this.label1.Location = new System.Drawing.Point(234, -12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(271, 56);
             this.label1.TabIndex = 5;
@@ -60,7 +61,7 @@
             // 
             this.lblMensaje.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMensaje.ForeColor = System.Drawing.Color.White;
-            this.lblMensaje.Location = new System.Drawing.Point(109, 69);
+            this.lblMensaje.Location = new System.Drawing.Point(109, 31);
             this.lblMensaje.Name = "lblMensaje";
             this.lblMensaje.Size = new System.Drawing.Size(515, 104);
             this.lblMensaje.TabIndex = 4;
@@ -77,18 +78,35 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Yellow;
+            this.label3.Location = new System.Drawing.Point(225, 135);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(309, 30);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "(Espere a que se re establezca)";
+            // 
             // TestInternet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(670, 168);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblMensaje);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TestInternet";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TestInternet";
             this.Load += new System.EventHandler(this.TestInternet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -104,5 +122,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblMensaje;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label3;
     }
 }

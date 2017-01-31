@@ -41,6 +41,22 @@ namespace WindowsFormsApplication1
             }
         }
 
+        void registrar_evento_reconectado()
+        {
+
+            /*-------------------------PRUEBA DE MONITOREO DE RED(LOGS)----------------------*/
+            string path = @"c:\temp\MONITOREO.txt";
+
+            // This text is always added, making the file longer over time
+            // if it is not deleted.
+            using (StreamWriter sw = File.AppendText(path))
+            {
+                string hora = DateTime.Now.ToLongTimeString();
+                sw.WriteLine("Volvio la coneccion a las " + hora + " Ticket: " + Properties.Settings.Default.serie + Properties.Settings.Default.numero_vr + " Usuario: " + Properties.Settings.Default.nomempleado + " Punto Venta: " + Properties.Settings.Default.nom_p_venta);
+
+            }
+        }
+
         private bool AccesoInternet()
         {
 
@@ -61,6 +77,11 @@ namespace WindowsFormsApplication1
         private void timer1_Tick(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+
             //Color randomColor = Color.FromArgb(rnd.Next(256), rnd.Next(256), 0);
             //BackColor = randomColor;
 
@@ -75,7 +96,7 @@ namespace WindowsFormsApplication1
             AccesoInternet();
             if (AccesoInternet() == true)
             {
-
+                registrar_evento_reconectado();
                 this.Close();
             }
             else
@@ -87,8 +108,5 @@ namespace WindowsFormsApplication1
 
             timer1.Start();  // iniciar nuevamente el timer.
         }
-
-
-
     }
 }

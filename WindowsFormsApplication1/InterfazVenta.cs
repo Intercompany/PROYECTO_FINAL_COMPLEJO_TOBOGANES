@@ -15,6 +15,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Globalization;
 using System.Net.NetworkInformation;
+using System.IO;
 
 namespace WindowsFormsApplication1
 {
@@ -94,7 +95,7 @@ namespace WindowsFormsApplication1
             dgvBIEN_VENTA.Visible = false;
             LLENAR_GRILLA();
             // DataTable vPdt_detBien = (DataTable)detalle;
-            timer1.Start();
+            
             /*----------*/
             //crea boton Eliminar en el gridview
             DataGridViewButtonColumn colBotonEliminar = new DataGridViewButtonColumn();
@@ -122,6 +123,7 @@ namespace WindowsFormsApplication1
 
             LLENAR_GRILLA(); //ESTO PERMITE QUE SE MUESTRE LOS DATOS DE LA GRILLA A PESAR QUE SE AGA EL AUTOPOSBAC
             ACTUALIZAR_TOTALES(); //ESTO DEVUELVE LA ACTUALIZACION DE TOTALES
+            timer1.Start();
         }
 
 
@@ -2060,44 +2062,20 @@ namespace WindowsFormsApplication1
         /*AQUI EMPIEZA LA PRUBA DE INTERNET*/
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timer1.Interval = 2000;
-            timer1.Stop(); //detener mientras se hace la consulta
-
-            AccesoInternet();
-            if (AccesoInternet() == false)
-            {
-                DialogoInternet();
-            }
-
-            timer1.Start();  // iniciar nuevamente el timer.
+            
         }
 
 
 
         private bool AccesoInternet()
         {
-
-
-            //Ping Pings = new Ping();
-            //int timeout = 1000;
-
-            //if (Pings.Send("200.48.225.130", timeout).Status == IPStatus.Success)
-            //{
-
-            //    return true;
-            //}
-            //else
-            //{
-            //    return false;
-            //}
-
             try
             {
-                System.Net.IPHostEntry host = System.Net.Dns.GetHostEntry("www.google.com");
+                System.Net.IPHostEntry host = System.Net.Dns.GetHostEntry("google.com");
                 return true;
 
             }
-            catch (Exception es)
+            catch (Exception ec)
             {
 
                 return false;
@@ -2106,10 +2084,26 @@ namespace WindowsFormsApplication1
 
         }
 
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            timer1.Interval = 2000;
+            timer1.Stop(); // detener mientras se hace la consulta
+
+            AccesoInternet();
+
+            if (AccesoInternet() == false)
+            {
+                DialogoInternet();
+
+            }
+
+            timer1.Start();  // iniciar nuevamente el timer.
+        }
+
         public void DialogoInternet()
         {
-            TestInternet test = new TestInternet();
-            test.ShowDialog();
+            TestInternet testing = new TestInternet();
+            testing.ShowDialog();
         }
 
 

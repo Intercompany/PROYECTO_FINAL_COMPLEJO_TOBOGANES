@@ -1466,6 +1466,10 @@
             this.btnBIEN22.UseVisualStyleBackColor = false;
             this.btnBIEN22.Click += new System.EventHandler(this.btnBIEN22_Click);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // InterfazVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
